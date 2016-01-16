@@ -42,7 +42,7 @@
     customTabBar.frame = self.tabBar.frame;
     customTabBar.backgroundColor = [UIColor blueColor];
     [self.view addSubview:customTabBar];
-    
+    /*
     // 2.添加五个按钮
     for (int i = 0; i < 5; i++) {
         
@@ -69,11 +69,11 @@
             [self buttonClick:button];
         }
     }
-    
+    */
     
     [self.tabBar removeFromSuperview];
 }
-
+/*
 - (void)buttonClick:(UIButton *)button{
     
     NSLog(@"%s",__func__);
@@ -84,7 +84,7 @@
     // 3.记录当前按钮
     self.currentSelButton = button;
 }
-
+*/
 - (void)setUpChildVc
 {
     // 3. 创建子控制器
