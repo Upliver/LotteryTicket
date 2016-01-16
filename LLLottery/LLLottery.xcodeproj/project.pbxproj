@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A815772A1C4AA75C00BB66B5 /* Assets.xcassets */; };
 		A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */; };
+		A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A862415E1C4AD2410048B872 /* LLTabBar.m */; };
+		A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A86241611C4AD9990048B872 /* LLTabBarButton.m */; };
 		A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */; };
 		A8A1EDED1C4ACA2200A2FB2F /* LLArenaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDC01C4ACA2200A2FB2F /* LLArenaViewController.storyboard */; };
 		A8A1EDEE1C4ACA2200A2FB2F /* LLDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDC61C4ACA2200A2FB2F /* LLDiscoverTableViewController.m */; };
@@ -29,6 +31,10 @@
 		A815772A1C4AA75C00BB66B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A815772D1C4AA75C00BB66B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A815772F1C4AA75C00BB66B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A862415D1C4AD2410048B872 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
+		A862415E1C4AD2410048B872 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
+		A86241601C4AD9990048B872 /* LLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarButton.h; sourceTree = "<group>"; };
+		A86241611C4AD9990048B872 /* LLTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarButton.m; sourceTree = "<group>"; };
 		A8A1EDBE1C4ACA2200A2FB2F /* LLArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLArenaViewController.h; sourceTree = "<group>"; };
 		A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLArenaViewController.m; sourceTree = "<group>"; };
 		A8A1EDC01C4ACA2200A2FB2F /* LLArenaViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLArenaViewController.storyboard; sourceTree = "<group>"; };
@@ -277,6 +283,10 @@
 		A8A1EDDD1C4ACA2200A2FB2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A862415D1C4AD2410048B872 /* LLTabBar.h */,
+				A862415E1C4AD2410048B872 /* LLTabBar.m */,
+				A86241601C4AD9990048B872 /* LLTabBarButton.h */,
+				A86241611C4AD9990048B872 /* LLTabBarButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -421,8 +431,10 @@
 				A8A1EDEE1C4ACA2200A2FB2F /* LLDiscoverTableViewController.m in Sources */,
 				A8A1EDF01C4ACA2200A2FB2F /* LLHallTableViewController.m in Sources */,
 				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,
+				A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */,
 				A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */,
 				A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */,
+				A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */,
 				A8A1EDF51C4ACA2200A2FB2F /* LLMineViewController.m in Sources */,
 				A8A1EDF81C4ACA2200A2FB2F /* main.m in Sources */,
 				A8A1EDF71C4ACA2200A2FB2F /* AppDelegate.m in Sources */,
