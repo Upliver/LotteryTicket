@@ -47,14 +47,7 @@
         NSString *seleImageName = [NSString stringWithFormat:@"TabBar%dSel",i+1];
         [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         [button setBackgroundImage:[UIImage imageNamed:seleImageName] forState:UIControlStateSelected];
-        /*
-        // 3.设置按钮的frame
-        CGFloat buttonW = self.frame.size.width/5;
-        CGFloat buttonH = self.frame.size.height;
-        CGFloat buttonX = i * buttonW;
-        CGFloat buttonY = 0;
-        button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
-         */
+        
         [self addSubview:button];
         
         // 4.监听按钮点击事件
@@ -66,6 +59,7 @@
         }
     }
 }
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
