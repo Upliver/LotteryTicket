@@ -7,49 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A81577201C4AA75C00BB66B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A815771F1C4AA75C00BB66B5 /* main.m */; };
-		A81577231C4AA75C00BB66B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81577221C4AA75C00BB66B5 /* AppDelegate.m */; };
 		A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A815772A1C4AA75C00BB66B5 /* Assets.xcassets */; };
 		A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */; };
-		A8A1EDA11C4AB87900A2FB2F /* LLHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA01C4AB87900A2FB2F /* LLHallTableViewController.m */; };
-		A8A1EDA41C4AB89400A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA31C4AB89400A2FB2F /* LLArenaViewController.m */; };
-		A8A1EDA71C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA61C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m */; };
-		A8A1EDAA1C4AB8DE00A2FB2F /* LLHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA91C4AB8DE00A2FB2F /* LLHistoryTableViewController.m */; };
-		A8A1EDAD1C4AB8F200A2FB2F /* LLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDAC1C4AB8F200A2FB2F /* LLMineViewController.m */; };
-		A8A1EDAF1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDAE1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard */; };
-		A8A1EDB11C4ABE0C00A2FB2F /* LLArenaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB01C4ABE0C00A2FB2F /* LLArenaViewController.storyboard */; };
-		A8A1EDB31C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB21C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard */; };
-		A8A1EDB51C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB41C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard */; };
-		A8A1EDB71C4ABE5500A2FB2F /* LLMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB61C4ABE5500A2FB2F /* LLMineViewController.storyboard */; };
-		A8A1EDBA1C4AC3B800A2FB2F /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDB91C4AC3B800A2FB2F /* LLTabBarController.m */; };
+		A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */; };
+		A8A1EDED1C4ACA2200A2FB2F /* LLArenaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDC01C4ACA2200A2FB2F /* LLArenaViewController.storyboard */; };
+		A8A1EDEE1C4ACA2200A2FB2F /* LLDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDC61C4ACA2200A2FB2F /* LLDiscoverTableViewController.m */; };
+		A8A1EDEF1C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDC71C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard */; };
+		A8A1EDF01C4ACA2200A2FB2F /* LLHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDCD1C4ACA2200A2FB2F /* LLHallTableViewController.m */; };
+		A8A1EDF11C4ACA2200A2FB2F /* LLHallTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDCE1C4ACA2200A2FB2F /* LLHallTableViewController.storyboard */; };
+		A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDD41C4ACA2200A2FB2F /* LLHistoryTableViewController.m */; };
+		A8A1EDF31C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDD51C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard */; };
+		A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDDB1C4ACA2200A2FB2F /* LLTabBarController.m */; };
+		A8A1EDF51C4ACA2200A2FB2F /* LLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDE11C4ACA2200A2FB2F /* LLMineViewController.m */; };
+		A8A1EDF61C4ACA2200A2FB2F /* LLMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDE21C4ACA2200A2FB2F /* LLMineViewController.storyboard */; };
+		A8A1EDF71C4ACA2200A2FB2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDE71C4ACA2200A2FB2F /* AppDelegate.m */; };
+		A8A1EDF81C4ACA2200A2FB2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDEA1C4ACA2200A2FB2F /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A815771B1C4AA75C00BB66B5 /* LLLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A815771F1C4AA75C00BB66B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A81577211C4AA75C00BB66B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A81577221C4AA75C00BB66B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A815772A1C4AA75C00BB66B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A815772D1C4AA75C00BB66B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A815772F1C4AA75C00BB66B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8A1ED9E1C4AB37300A2FB2F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		A8A1ED9F1C4AB87900A2FB2F /* LLHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHallTableViewController.h; sourceTree = "<group>"; };
-		A8A1EDA01C4AB87900A2FB2F /* LLHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHallTableViewController.m; sourceTree = "<group>"; };
-		A8A1EDA21C4AB89400A2FB2F /* LLArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLArenaViewController.h; sourceTree = "<group>"; };
-		A8A1EDA31C4AB89400A2FB2F /* LLArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLArenaViewController.m; sourceTree = "<group>"; };
-		A8A1EDA51C4AB8CA00A2FB2F /* LLDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDiscoverTableViewController.h; sourceTree = "<group>"; };
-		A8A1EDA61C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverTableViewController.m; sourceTree = "<group>"; };
-		A8A1EDA81C4AB8DE00A2FB2F /* LLHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHistoryTableViewController.h; sourceTree = "<group>"; };
-		A8A1EDA91C4AB8DE00A2FB2F /* LLHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHistoryTableViewController.m; sourceTree = "<group>"; };
-		A8A1EDAB1C4AB8F200A2FB2F /* LLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMineViewController.h; sourceTree = "<group>"; };
-		A8A1EDAC1C4AB8F200A2FB2F /* LLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMineViewController.m; sourceTree = "<group>"; };
-		A8A1EDAE1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLHallTableViewController.storyboard; sourceTree = "<group>"; };
-		A8A1EDB01C4ABE0C00A2FB2F /* LLArenaViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLArenaViewController.storyboard; sourceTree = "<group>"; };
-		A8A1EDB21C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLDiscoverTableViewController.storyboard; sourceTree = "<group>"; };
-		A8A1EDB41C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLHistoryTableViewController.storyboard; sourceTree = "<group>"; };
-		A8A1EDB61C4ABE5500A2FB2F /* LLMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLMineViewController.storyboard; sourceTree = "<group>"; };
-		A8A1EDB81C4AC3B800A2FB2F /* LLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarController.h; sourceTree = "<group>"; };
-		A8A1EDB91C4AC3B800A2FB2F /* LLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarController.m; sourceTree = "<group>"; };
+		A8A1EDBE1C4ACA2200A2FB2F /* LLArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLArenaViewController.h; sourceTree = "<group>"; };
+		A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLArenaViewController.m; sourceTree = "<group>"; };
+		A8A1EDC01C4ACA2200A2FB2F /* LLArenaViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLArenaViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDC51C4ACA2200A2FB2F /* LLDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDiscoverTableViewController.h; sourceTree = "<group>"; };
+		A8A1EDC61C4ACA2200A2FB2F /* LLDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverTableViewController.m; sourceTree = "<group>"; };
+		A8A1EDC71C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLDiscoverTableViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDCC1C4ACA2200A2FB2F /* LLHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHallTableViewController.h; sourceTree = "<group>"; };
+		A8A1EDCD1C4ACA2200A2FB2F /* LLHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHallTableViewController.m; sourceTree = "<group>"; };
+		A8A1EDCE1C4ACA2200A2FB2F /* LLHallTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLHallTableViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDD31C4ACA2200A2FB2F /* LLHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHistoryTableViewController.h; sourceTree = "<group>"; };
+		A8A1EDD41C4ACA2200A2FB2F /* LLHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHistoryTableViewController.m; sourceTree = "<group>"; };
+		A8A1EDD51C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLHistoryTableViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDDA1C4ACA2200A2FB2F /* LLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarController.h; sourceTree = "<group>"; };
+		A8A1EDDB1C4ACA2200A2FB2F /* LLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarController.m; sourceTree = "<group>"; };
+		A8A1EDE01C4ACA2200A2FB2F /* LLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMineViewController.h; sourceTree = "<group>"; };
+		A8A1EDE11C4ACA2200A2FB2F /* LLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMineViewController.m; sourceTree = "<group>"; };
+		A8A1EDE21C4ACA2200A2FB2F /* LLMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLMineViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDE61C4ACA2200A2FB2F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8A1EDE71C4ACA2200A2FB2F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8A1EDEA1C4ACA2200A2FB2F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8A1EDEB1C4ACA2200A2FB2F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,29 +82,7 @@
 		A815771D1C4AA75C00BB66B5 /* LLLottery */ = {
 			isa = PBXGroup;
 			children = (
-				A81577211C4AA75C00BB66B5 /* AppDelegate.h */,
-				A81577221C4AA75C00BB66B5 /* AppDelegate.m */,
-				A8A1EDB81C4AC3B800A2FB2F /* LLTabBarController.h */,
-				A8A1EDB91C4AC3B800A2FB2F /* LLTabBarController.m */,
-				A8A1ED9F1C4AB87900A2FB2F /* LLHallTableViewController.h */,
-				A8A1EDA01C4AB87900A2FB2F /* LLHallTableViewController.m */,
-				A8A1EDAE1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard */,
-				A8A1EDA21C4AB89400A2FB2F /* LLArenaViewController.h */,
-				A8A1EDA31C4AB89400A2FB2F /* LLArenaViewController.m */,
-				A8A1EDB01C4ABE0C00A2FB2F /* LLArenaViewController.storyboard */,
-				A8A1EDA51C4AB8CA00A2FB2F /* LLDiscoverTableViewController.h */,
-				A8A1EDA61C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m */,
-				A8A1EDB21C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard */,
-				A8A1EDA81C4AB8DE00A2FB2F /* LLHistoryTableViewController.h */,
-				A8A1EDA91C4AB8DE00A2FB2F /* LLHistoryTableViewController.m */,
-				A8A1EDB41C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard */,
-				A8A1EDAB1C4AB8F200A2FB2F /* LLMineViewController.h */,
-				A8A1EDAC1C4AB8F200A2FB2F /* LLMineViewController.m */,
-				A8A1EDB61C4ABE5500A2FB2F /* LLMineViewController.storyboard */,
-				A8A1ED9E1C4AB37300A2FB2F /* PrefixHeader.pch */,
-				A815772A1C4AA75C00BB66B5 /* Assets.xcassets */,
-				A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */,
-				A815772F1C4AA75C00BB66B5 /* Info.plist */,
+				A8A1EDBB1C4ACA2200A2FB2F /* Classes */,
 				A815771E1C4AA75C00BB66B5 /* Supporting Files */,
 			);
 			path = LLLottery;
@@ -113,9 +91,255 @@
 		A815771E1C4AA75C00BB66B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A815771F1C4AA75C00BB66B5 /* main.m */,
+				A815772A1C4AA75C00BB66B5 /* Assets.xcassets */,
+				A815772F1C4AA75C00BB66B5 /* Info.plist */,
+				A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8A1EDBB1C4ACA2200A2FB2F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDBC1C4ACA2200A2FB2F /* Arena */,
+				A8A1EDC31C4ACA2200A2FB2F /* Discover */,
+				A8A1EDCA1C4ACA2200A2FB2F /* Hall */,
+				A8A1EDD11C4ACA2200A2FB2F /* History */,
+				A8A1EDD81C4ACA2200A2FB2F /* Main */,
+				A8A1EDDE1C4ACA2200A2FB2F /* Mine */,
+				A8A1EDE51C4ACA2200A2FB2F /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A8A1EDBC1C4ACA2200A2FB2F /* Arena */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDBD1C4ACA2200A2FB2F /* Controller */,
+				A8A1EDC11C4ACA2200A2FB2F /* Model */,
+				A8A1EDC21C4ACA2200A2FB2F /* Views */,
+			);
+			path = Arena;
+			sourceTree = "<group>";
+		};
+		A8A1EDBD1C4ACA2200A2FB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDBE1C4ACA2200A2FB2F /* LLArenaViewController.h */,
+				A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */,
+				A8A1EDC01C4ACA2200A2FB2F /* LLArenaViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8A1EDC11C4ACA2200A2FB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A1EDC21C4ACA2200A2FB2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A1EDC31C4ACA2200A2FB2F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDC41C4ACA2200A2FB2F /* Controller */,
+				A8A1EDC81C4ACA2200A2FB2F /* Model */,
+				A8A1EDC91C4ACA2200A2FB2F /* Views */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		A8A1EDC41C4ACA2200A2FB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDC51C4ACA2200A2FB2F /* LLDiscoverTableViewController.h */,
+				A8A1EDC61C4ACA2200A2FB2F /* LLDiscoverTableViewController.m */,
+				A8A1EDC71C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8A1EDC81C4ACA2200A2FB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A1EDC91C4ACA2200A2FB2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A1EDCA1C4ACA2200A2FB2F /* Hall */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDCB1C4ACA2200A2FB2F /* Controller */,
+				A8A1EDCF1C4ACA2200A2FB2F /* Model */,
+				A8A1EDD01C4ACA2200A2FB2F /* Views */,
+			);
+			path = Hall;
+			sourceTree = "<group>";
+		};
+		A8A1EDCB1C4ACA2200A2FB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDCC1C4ACA2200A2FB2F /* LLHallTableViewController.h */,
+				A8A1EDCD1C4ACA2200A2FB2F /* LLHallTableViewController.m */,
+				A8A1EDCE1C4ACA2200A2FB2F /* LLHallTableViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8A1EDCF1C4ACA2200A2FB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A1EDD01C4ACA2200A2FB2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A1EDD11C4ACA2200A2FB2F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDD21C4ACA2200A2FB2F /* Controller */,
+				A8A1EDD61C4ACA2200A2FB2F /* Model */,
+				A8A1EDD71C4ACA2200A2FB2F /* Views */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A8A1EDD21C4ACA2200A2FB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDD31C4ACA2200A2FB2F /* LLHistoryTableViewController.h */,
+				A8A1EDD41C4ACA2200A2FB2F /* LLHistoryTableViewController.m */,
+				A8A1EDD51C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8A1EDD61C4ACA2200A2FB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A1EDD71C4ACA2200A2FB2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A1EDD81C4ACA2200A2FB2F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDD91C4ACA2200A2FB2F /* Controller */,
+				A8A1EDDC1C4ACA2200A2FB2F /* Model */,
+				A8A1EDDD1C4ACA2200A2FB2F /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A8A1EDD91C4ACA2200A2FB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDDA1C4ACA2200A2FB2F /* LLTabBarController.h */,
+				A8A1EDDB1C4ACA2200A2FB2F /* LLTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8A1EDDC1C4ACA2200A2FB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A1EDDD1C4ACA2200A2FB2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A1EDDE1C4ACA2200A2FB2F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDDF1C4ACA2200A2FB2F /* Controller */,
+				A8A1EDE31C4ACA2200A2FB2F /* Model */,
+				A8A1EDE41C4ACA2200A2FB2F /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		A8A1EDDF1C4ACA2200A2FB2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDE01C4ACA2200A2FB2F /* LLMineViewController.h */,
+				A8A1EDE11C4ACA2200A2FB2F /* LLMineViewController.m */,
+				A8A1EDE21C4ACA2200A2FB2F /* LLMineViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8A1EDE31C4ACA2200A2FB2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A1EDE41C4ACA2200A2FB2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8A1EDE51C4ACA2200A2FB2F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1EDE61C4ACA2200A2FB2F /* AppDelegate.h */,
+				A8A1EDE71C4ACA2200A2FB2F /* AppDelegate.m */,
+				A8A1EDE81C4ACA2200A2FB2F /* Category */,
+				A8A1EDE91C4ACA2200A2FB2F /* Libs */,
+				A8A1EDEA1C4ACA2200A2FB2F /* main.m */,
+				A8A1EDEB1C4ACA2200A2FB2F /* PrefixHeader.pch */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		A8A1EDE81C4ACA2200A2FB2F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A8A1EDE91C4ACA2200A2FB2F /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,12 +402,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */,
-				A8A1EDB31C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */,
+				A8A1EDEF1C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */,
 				A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */,
-				A8A1EDB71C4ABE5500A2FB2F /* LLMineViewController.storyboard in Resources */,
-				A8A1EDB51C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard in Resources */,
-				A8A1EDB11C4ABE0C00A2FB2F /* LLArenaViewController.storyboard in Resources */,
-				A8A1EDAF1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard in Resources */,
+				A8A1EDF61C4ACA2200A2FB2F /* LLMineViewController.storyboard in Resources */,
+				A8A1EDF31C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard in Resources */,
+				A8A1EDF11C4ACA2200A2FB2F /* LLHallTableViewController.storyboard in Resources */,
+				A8A1EDED1C4ACA2200A2FB2F /* LLArenaViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,14 +418,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A1EDAD1C4AB8F200A2FB2F /* LLMineViewController.m in Sources */,
-				A8A1EDA71C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m in Sources */,
-				A8A1EDA41C4AB89400A2FB2F /* LLArenaViewController.m in Sources */,
-				A8A1EDAA1C4AB8DE00A2FB2F /* LLHistoryTableViewController.m in Sources */,
-				A81577231C4AA75C00BB66B5 /* AppDelegate.m in Sources */,
-				A8A1EDA11C4AB87900A2FB2F /* LLHallTableViewController.m in Sources */,
-				A81577201C4AA75C00BB66B5 /* main.m in Sources */,
-				A8A1EDBA1C4AC3B800A2FB2F /* LLTabBarController.m in Sources */,
+				A8A1EDEE1C4ACA2200A2FB2F /* LLDiscoverTableViewController.m in Sources */,
+				A8A1EDF01C4ACA2200A2FB2F /* LLHallTableViewController.m in Sources */,
+				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,
+				A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */,
+				A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */,
+				A8A1EDF51C4ACA2200A2FB2F /* LLMineViewController.m in Sources */,
+				A8A1EDF81C4ACA2200A2FB2F /* main.m in Sources */,
+				A8A1EDF71C4ACA2200A2FB2F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LLLottery/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLLottery/Classes/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = LLLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -319,7 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LLLottery/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLLottery/Classes/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = LLLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
