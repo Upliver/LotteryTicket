@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		A81577201C4AA75C00BB66B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A815771F1C4AA75C00BB66B5 /* main.m */; };
 		A81577231C4AA75C00BB66B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81577221C4AA75C00BB66B5 /* AppDelegate.m */; };
-		A81577261C4AA75C00BB66B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81577251C4AA75C00BB66B5 /* ViewController.m */; };
-		A81577291C4AA75C00BB66B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81577271C4AA75C00BB66B5 /* Main.storyboard */; };
 		A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A815772A1C4AA75C00BB66B5 /* Assets.xcassets */; };
 		A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */; };
+		A8A1EDA11C4AB87900A2FB2F /* LLHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA01C4AB87900A2FB2F /* LLHallTableViewController.m */; };
+		A8A1EDA41C4AB89400A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA31C4AB89400A2FB2F /* LLArenaViewController.m */; };
+		A8A1EDA71C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA61C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m */; };
+		A8A1EDAA1C4AB8DE00A2FB2F /* LLHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDA91C4AB8DE00A2FB2F /* LLHistoryTableViewController.m */; };
+		A8A1EDAD1C4AB8F200A2FB2F /* LLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDAC1C4AB8F200A2FB2F /* LLMineViewController.m */; };
+		A8A1EDAF1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDAE1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard */; };
+		A8A1EDB11C4ABE0C00A2FB2F /* LLArenaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB01C4ABE0C00A2FB2F /* LLArenaViewController.storyboard */; };
+		A8A1EDB31C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB21C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard */; };
+		A8A1EDB51C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB41C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard */; };
+		A8A1EDB71C4ABE5500A2FB2F /* LLMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDB61C4ABE5500A2FB2F /* LLMineViewController.storyboard */; };
+		A8A1EDBA1C4AC3B800A2FB2F /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDB91C4AC3B800A2FB2F /* LLTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +29,27 @@
 		A815771F1C4AA75C00BB66B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A81577211C4AA75C00BB66B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A81577221C4AA75C00BB66B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A81577241C4AA75C00BB66B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A81577251C4AA75C00BB66B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A81577281C4AA75C00BB66B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A815772A1C4AA75C00BB66B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A815772D1C4AA75C00BB66B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A815772F1C4AA75C00BB66B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8A1ED9E1C4AB37300A2FB2F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A8A1ED9F1C4AB87900A2FB2F /* LLHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHallTableViewController.h; sourceTree = "<group>"; };
+		A8A1EDA01C4AB87900A2FB2F /* LLHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHallTableViewController.m; sourceTree = "<group>"; };
+		A8A1EDA21C4AB89400A2FB2F /* LLArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLArenaViewController.h; sourceTree = "<group>"; };
+		A8A1EDA31C4AB89400A2FB2F /* LLArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLArenaViewController.m; sourceTree = "<group>"; };
+		A8A1EDA51C4AB8CA00A2FB2F /* LLDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDiscoverTableViewController.h; sourceTree = "<group>"; };
+		A8A1EDA61C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverTableViewController.m; sourceTree = "<group>"; };
+		A8A1EDA81C4AB8DE00A2FB2F /* LLHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHistoryTableViewController.h; sourceTree = "<group>"; };
+		A8A1EDA91C4AB8DE00A2FB2F /* LLHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHistoryTableViewController.m; sourceTree = "<group>"; };
+		A8A1EDAB1C4AB8F200A2FB2F /* LLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMineViewController.h; sourceTree = "<group>"; };
+		A8A1EDAC1C4AB8F200A2FB2F /* LLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMineViewController.m; sourceTree = "<group>"; };
+		A8A1EDAE1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLHallTableViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDB01C4ABE0C00A2FB2F /* LLArenaViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLArenaViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDB21C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLDiscoverTableViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDB41C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLHistoryTableViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDB61C4ABE5500A2FB2F /* LLMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLMineViewController.storyboard; sourceTree = "<group>"; };
+		A8A1EDB81C4AC3B800A2FB2F /* LLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarController.h; sourceTree = "<group>"; };
+		A8A1EDB91C4AC3B800A2FB2F /* LLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +84,24 @@
 			children = (
 				A81577211C4AA75C00BB66B5 /* AppDelegate.h */,
 				A81577221C4AA75C00BB66B5 /* AppDelegate.m */,
-				A81577241C4AA75C00BB66B5 /* ViewController.h */,
-				A81577251C4AA75C00BB66B5 /* ViewController.m */,
-				A81577271C4AA75C00BB66B5 /* Main.storyboard */,
+				A8A1EDB81C4AC3B800A2FB2F /* LLTabBarController.h */,
+				A8A1EDB91C4AC3B800A2FB2F /* LLTabBarController.m */,
+				A8A1ED9F1C4AB87900A2FB2F /* LLHallTableViewController.h */,
+				A8A1EDA01C4AB87900A2FB2F /* LLHallTableViewController.m */,
+				A8A1EDAE1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard */,
+				A8A1EDA21C4AB89400A2FB2F /* LLArenaViewController.h */,
+				A8A1EDA31C4AB89400A2FB2F /* LLArenaViewController.m */,
+				A8A1EDB01C4ABE0C00A2FB2F /* LLArenaViewController.storyboard */,
+				A8A1EDA51C4AB8CA00A2FB2F /* LLDiscoverTableViewController.h */,
+				A8A1EDA61C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m */,
+				A8A1EDB21C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard */,
+				A8A1EDA81C4AB8DE00A2FB2F /* LLHistoryTableViewController.h */,
+				A8A1EDA91C4AB8DE00A2FB2F /* LLHistoryTableViewController.m */,
+				A8A1EDB41C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard */,
+				A8A1EDAB1C4AB8F200A2FB2F /* LLMineViewController.h */,
+				A8A1EDAC1C4AB8F200A2FB2F /* LLMineViewController.m */,
+				A8A1EDB61C4ABE5500A2FB2F /* LLMineViewController.storyboard */,
+				A8A1ED9E1C4AB37300A2FB2F /* PrefixHeader.pch */,
 				A815772A1C4AA75C00BB66B5 /* Assets.xcassets */,
 				A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */,
 				A815772F1C4AA75C00BB66B5 /* Info.plist */,
@@ -105,6 +144,7 @@
 		A81577131C4AA75C00BB66B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Upriver;
 				TargetAttributes = {
@@ -138,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */,
+				A8A1EDB31C4ABE2900A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */,
 				A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */,
-				A81577291C4AA75C00BB66B5 /* Main.storyboard in Resources */,
+				A8A1EDB71C4ABE5500A2FB2F /* LLMineViewController.storyboard in Resources */,
+				A8A1EDB51C4ABE4100A2FB2F /* LLHistoryTableViewController.storyboard in Resources */,
+				A8A1EDB11C4ABE0C00A2FB2F /* LLArenaViewController.storyboard in Resources */,
+				A8A1EDAF1C4ABDEC00A2FB2F /* LLHallTableViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +194,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A81577261C4AA75C00BB66B5 /* ViewController.m in Sources */,
+				A8A1EDAD1C4AB8F200A2FB2F /* LLMineViewController.m in Sources */,
+				A8A1EDA71C4AB8CA00A2FB2F /* LLDiscoverTableViewController.m in Sources */,
+				A8A1EDA41C4AB89400A2FB2F /* LLArenaViewController.m in Sources */,
+				A8A1EDAA1C4AB8DE00A2FB2F /* LLHistoryTableViewController.m in Sources */,
 				A81577231C4AA75C00BB66B5 /* AppDelegate.m in Sources */,
+				A8A1EDA11C4AB87900A2FB2F /* LLHallTableViewController.m in Sources */,
 				A81577201C4AA75C00BB66B5 /* main.m in Sources */,
+				A8A1EDBA1C4AC3B800A2FB2F /* LLTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A81577271C4AA75C00BB66B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A81577281C4AA75C00BB66B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -264,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLLottery/PrefixHeader.pch";
 				INFOPLIST_FILE = LLLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -277,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLLottery/PrefixHeader.pch";
 				INFOPLIST_FILE = LLLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -305,6 +348,7 @@
 				A81577341C4AA75C00BB66B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
