@@ -23,7 +23,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupButton];
+        //  [self setupButton];
     }
     return self;
 }
@@ -32,11 +32,32 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        [self setupButton];
+        // [self setupButton];
     }
     return self;
 }
 
+- (void)addTabBarButtonWith:(UITabBarItem *)item
+{
+    LLTabBarButton *button = [LLTabBarButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:item.image forState:UIControlStateNormal];
+    [button setBackgroundImage:item.selectedImage forState:UIControlStateSelected];
+    
+    [self addSubview:button];
+    
+    // 4.监听按钮点击事件
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+    
+    // 5.设置默认选中第一个按钮
+    NSInteger count = self.subviews.count;
+    if (count == 1) {
+        [self buttonClick:button];
+    }
+
+
+}
+
+/*
 - (void)setupButton
 {
     for (int i = 0; i < 5; i++) {
@@ -59,7 +80,7 @@
         }
     }
 }
-
+ */
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -74,11 +95,18 @@
         CGFloat buttonX = i * buttonW;
         CGFloat buttonY = 0;
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
-        
+        // 给按钮设置tag值
+        button.tag = i;
     }
 }
 
 - (void)buttonClick:(UIButton *)button{
+    
+    // 通知代理
+    if ([self.delegate respondsToSelector:@selector(tabBar:didSelectButtonFrom:to:)]) {
+        
+        [self.delegate tabBar:self didSelectButtonFrom:self.currentSelButton.tag to:button.tag];
+    }
     
     NSLog(@"%s",__func__);
     // 1.取消之前按钮的选中状态

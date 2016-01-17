@@ -15,8 +15,9 @@
 #import "LLTabBar.h"
 
 
-@interface LLTabBarController ()
+@interface LLTabBarController ()<LLTabBarDelegate>
 
+@property(nonatomic, weak) LLTabBar *customTabBar;
 
 @end
 
@@ -25,11 +26,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // 2.添加自定义TabBar
+    [self setUpTabBar];
+    
     // 1.添加子控制器
     [self setUpChildVc];
     
-    // 2.添加自定义TabBar
-    [self setUpTabBar];
 }
 
 - (void)setUpTabBar{
@@ -37,9 +39,11 @@
     // 1.创建自定义TabBar
     LLTabBar *customTabBar = [[LLTabBar alloc]init];
     customTabBar.frame = self.tabBar.frame;
-    customTabBar.backgroundColor = [UIColor blueColor];
     [self.view addSubview:customTabBar];
-       [self.tabBar removeFromSuperview];
+    customTabBar.delegate = self;
+    self.customTabBar = customTabBar;
+    
+    [self.tabBar removeFromSuperview];
 }
 
 - (void)setUpChildVc
@@ -61,7 +65,7 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:vcName bundle:nil];
     UIViewController *vc = sb.instantiateInitialViewController;
     
-    //vc.tabBarItem.title = title;
+    vc.tabBarItem.title = title;
     UIImage *nor = [UIImage imageNamed:image];
     
     // 设置图片的渲染模式----另外也可直接在Assets文件中选中图片设置Render属性为Original就OK了
@@ -72,7 +76,22 @@
     selected = [selected imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.selectedImage = selected;
     
+    // 调用自定义TabBar创建按钮的方法
+    [self.customTabBar addTabBarButtonWith:vc.tabBarItem];
+    
     return vc;
 }
 
+#pragma mark -LLTabBarDelegate
+- (void)tabBar:(LLTabBar *)tabBar didSelectButtonFrom:(NSInteger)from to:(NSInteger)to
+{
+    NSLog(@"%tu---%tu",from,to);
+    
+    // 切换控制器
+    // 方式一
+//    UIViewController *vc = self.viewControllers[to];
+//    self.selectedViewController = vc;
+    // 方式二
+     self.selectedIndex = to;
+}
 @end
