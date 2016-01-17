@@ -5,6 +5,17 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 11
+        },
+        "cap-insets" : {
+          "right" : 310,
+          "left" : 319
+        }
+      },
       "idiom" : "universal",
       "filename" : "NLArenaNavBar64@2x.png",
       "scale" : "2x"
