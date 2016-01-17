@@ -10,7 +10,7 @@
 
 @implementation UIBarButtonItem (Extension)
 
-- (UIBarButtonItem *)itemWithTitle:(NSString *)title normalImage:(NSString *)image highlightedImage:(NSString *)hightedImage
++ (UIBarButtonItem *)itemWithTitle:(NSString *)title normalImage:(NSString *)image highlightedImage:(NSString *)hightedImage target:(id)target action:(SEL)action
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     // 错误信息:CUICatalog: Invalid asset name supplied: (null)
@@ -27,13 +27,12 @@
         [btn setTitle:title forState:UIControlStateNormal];
     }
     [btn sizeToFit];
-    [btn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     // 返回一个UIBarButtonItem
     return [[UIBarButtonItem alloc]initWithCustomView:btn];
 }
 
-- (void)clickItem:(UIBarButtonItem *)item{
-    
-}
+
 
 @end

@@ -16,22 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 1.左边
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTitle:@"客服" normalImage:@"" highlightedImage:nil target:nil action:nil];
+    // 2.右边
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"设置" normalImage:nil highlightedImage:nil target:nil action:nil];
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

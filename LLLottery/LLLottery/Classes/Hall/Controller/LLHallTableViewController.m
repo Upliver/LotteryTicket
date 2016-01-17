@@ -28,9 +28,9 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
      */
-    self.navigationItem.leftBarButtonItem = [self itemWithTitle:nil normalImage:@"CS50_activity_image" highlightedImage:nil];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTitle:nil normalImage:@"CS50_activity_image" highlightedImage:nil target:self action:@selector(activity)];
 }
-
+/*
 - (UIBarButtonItem *)itemWithTitle:(NSString *)title normalImage:(NSString *)image highlightedImage:(NSString *)hightedImage
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -52,13 +52,13 @@
     // 返回一个UIBarButtonItem
     return [[UIBarButtonItem alloc]initWithCustomView:btn];
 }
-
+*/
 - (void)clickItem:(UIBarButtonItem *)item{
 
 }
 
 - (void)activity
 {
-    NSLog(@"%s",__func__);
+
 }
 @end

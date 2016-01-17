@@ -108,7 +108,7 @@
         [self.delegate tabBar:self didSelectButtonFrom:self.currentSelButton.tag to:button.tag];
     }
     
-    NSLog(@"%s",__func__);
+
     // 1.取消之前按钮的选中状态
     self.currentSelButton.selected = NO;
     // 2.设置当前按钮的选中状态
