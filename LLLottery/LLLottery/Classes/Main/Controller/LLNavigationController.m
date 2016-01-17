@@ -59,5 +59,15 @@
     [super viewDidAppear:animated];
 
 }
-
+// 重写父类的push方法
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    // 注意:如果是栈底控制器,就不要隐藏
+    NSLog(@"%tu",self.viewControllers.count);
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+    
+}
 @end

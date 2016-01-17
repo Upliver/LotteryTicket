@@ -59,6 +59,13 @@
 
 - (void)activity
 {
-
+    // 1.创建控制器
+    UIViewController *vc = [[UIViewController alloc]init];
+    vc.view.backgroundColor = [UIColor purpleColor];
+    
+    // 告诉系统,当push子控制器的时候,隐藏底部的tabBar
+        //vc.hidesBottomBarWhenPushed = YES;
+    // 2.push
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

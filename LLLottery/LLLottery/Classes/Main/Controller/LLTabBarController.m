@@ -35,17 +35,30 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    for (UIView *view in self.tabBar.subviews) {
+        // 判断是否是自定义TabBar 如果是:就保留  如果不是就删除
+        if (![view isKindOfClass:[LLTabBar class]]) {
+            [view removeFromSuperview];
+        }
+    }
+}
+
 - (void)setUpTabBar{
     
     // 1.创建自定义TabBar
     LLTabBar *customTabBar = [[LLTabBar alloc]init];
-    customTabBar.frame = self.tabBar.frame;
-    [self.view addSubview:customTabBar];
+    customTabBar.frame = self.tabBar.bounds;
+    [self.tabBar addSubview:customTabBar];
     customTabBar.delegate = self;
     self.customTabBar = customTabBar;
     
-    [self.tabBar removeFromSuperview];
+    // [self.tabBar removeFromSuperview];
 }
+
+
 
 - (void)setUpChildVc
 {
