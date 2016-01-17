@@ -10,6 +10,7 @@
 		A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A815772A1C4AA75C00BB66B5 /* Assets.xcassets */; };
 		A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */; };
 		A82B29351C4C166300A1AC4B /* LLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B29341C4C166300A1AC4B /* LLNavigationController.m */; };
+		A82B29381C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */; };
 		A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A862415E1C4AD2410048B872 /* LLTabBar.m */; };
 		A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A86241611C4AD9990048B872 /* LLTabBarButton.m */; };
 		A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */; };
@@ -34,6 +35,8 @@
 		A815772F1C4AA75C00BB66B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A82B29331C4C166300A1AC4B /* LLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationController.h; sourceTree = "<group>"; };
 		A82B29341C4C166300A1AC4B /* LLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavigationController.m; sourceTree = "<group>"; };
+		A82B29361C4C2CD600A1AC4B /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		A862415D1C4AD2410048B872 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
 		A862415E1C4AD2410048B872 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
 		A86241601C4AD9990048B872 /* LLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarButton.h; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 		A8A1EDE81C4ACA2200A2FB2F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A82B29361C4C2CD600A1AC4B /* UIBarButtonItem+Extension.h */,
+				A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82B29381C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m in Sources */,
 				A8A1EDEE1C4ACA2200A2FB2F /* LLDiscoverTableViewController.m in Sources */,
 				A8A1EDF01C4ACA2200A2FB2F /* LLHallTableViewController.m in Sources */,
 				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,

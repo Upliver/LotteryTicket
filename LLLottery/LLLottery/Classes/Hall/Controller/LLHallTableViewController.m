@@ -16,83 +16,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
+    // 1.设置左边按钮--下面方法的局限性仅仅能设置一张图片--满足不了需求
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"CS50_activity_image"] style:UIBarButtonItemStylePlain target:self action:@selector(activity)];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"CS50_activity_image"] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"NavInfoFlat"] forState:UIControlStateHighlighted];
+    [btn sizeToFit];
+    [btn addTarget:self action:@selector(activity) forControlEvents:UIControlEventTouchUpInside];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+     */
+    self.navigationItem.leftBarButtonItem = [self itemWithTitle:nil normalImage:@"CS50_activity_image" highlightedImage:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIBarButtonItem *)itemWithTitle:(NSString *)title normalImage:(NSString *)image highlightedImage:(NSString *)hightedImage
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    // 错误信息:CUICatalog: Invalid asset name supplied: (null)
+    // 当上面传递图像是空时候会报上面的错误
+    if (image != nil && ![image isEqualToString:@""]) {
+        [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    }
+    if (hightedImage != nil && ![hightedImage isEqualToString:@""]) {
+
+        [btn setImage:[UIImage imageNamed:hightedImage] forState:UIControlStateHighlighted];
+    }
+    if (title != nil && ![title isEqualToString:@""]) {
+        
+        [btn setTitle:title forState:UIControlStateNormal];
+    }
+    [btn sizeToFit];
+    [btn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+    // 返回一个UIBarButtonItem
+    return [[UIBarButtonItem alloc]initWithCustomView:btn];
 }
 
-#pragma mark - Table view data source
+- (void)clickItem:(UIBarButtonItem *)item{
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+- (void)activity
+{
+    NSLog(@"%s",__func__);
 }
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
