@@ -67,7 +67,17 @@
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
     }
+    // 给每一个子控制器左侧添加一个自定义按钮
+    viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTitle:nil normalImage:@"NavBack" highlightedImage:nil target:self action:@selector(pop)];
+    
     [super pushViewController:viewController animated:animated];
     
 }
+
+#pragma mark -子控制器导航栏左侧的点击事件
+- (void)pop
+{
+    [self popViewControllerAnimated:YES];
+}
+
 @end
