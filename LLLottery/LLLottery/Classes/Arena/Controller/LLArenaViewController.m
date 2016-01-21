@@ -57,7 +57,7 @@
     dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
     [control setTitleTextAttributes:dict forState:UIControlStateSelected];
     
-    // 设置默认选中第一个
+    // 设置默认选中选中左侧第一个栏
     [control setSelectedSegmentIndex:0];
 }
 
