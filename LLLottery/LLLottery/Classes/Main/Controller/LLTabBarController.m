@@ -114,7 +114,7 @@
 
 }
 
-#pragma mark -LLTabBarDelegate
+#pragma mark LLTabBarDelegate代理方法
 - (void)tabBar:(LLTabBar *)tabBar didSelectButtonFrom:(NSInteger)from to:(NSInteger)to
 {
     NSLog(@"%tu---%tu",from,to);
