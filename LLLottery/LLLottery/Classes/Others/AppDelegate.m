@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LLTabBarController.h"
+#import "LLNewfeatureCollectionViewController.h"
 
 
 @interface AppDelegate ()
@@ -40,7 +41,8 @@
 //        [defaults setValue:currentVersion forKey:@"abc"];
 //        [defaults synchronize];
         // 显示新特性
-        UIViewController *vc = [[UIViewController alloc]init];
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+        LLNewfeatureCollectionViewController *vc = [[LLNewfeatureCollectionViewController alloc]initWithCollectionViewLayout:layout];
         vc.view.backgroundColor  = [UIColor purpleColor];
         self.window.rootViewController = vc;
         
