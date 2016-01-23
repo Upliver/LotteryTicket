@@ -42,6 +42,7 @@
 //        [defaults synchronize];
         // 显示新特性
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+        layout.itemSize = [UIScreen mainScreen].bounds.size;
         LLNewfeatureCollectionViewController *vc = [[LLNewfeatureCollectionViewController alloc]initWithCollectionViewLayout:layout];
         vc.view.backgroundColor  = [UIColor purpleColor];
         self.window.rootViewController = vc;

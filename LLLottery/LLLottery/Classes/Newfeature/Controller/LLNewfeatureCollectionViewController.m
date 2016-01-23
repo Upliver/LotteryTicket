@@ -40,7 +40,13 @@ static NSString *identifier = @"item";
     cell.backgroundColor = [UIColor greenColor];
     
     // 创建背景图片
+    UIImageView *iv = [[UIImageView alloc]init];
     
+    NSString *imageName = [NSString stringWithFormat:@"guide%ldBackground",indexPath.item + 1];
+    UIImage *image = [UIImage imageNamed:imageName];
+    iv.image = image;
+    iv.frame = self.view.bounds;
+    [cell.contentView addSubview:iv];
     return cell;
 
 }
