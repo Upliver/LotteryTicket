@@ -12,8 +12,7 @@
 
 
 @interface AppDelegate ()
-// /Users/Upriver/Documents/LLLotteryTickt/LLLottery/LLLottery/AppDelegate.m:30:5: Unknown type name 'LLTabBarController'; did you mean 'UITabBarController'?
-///Users/Upriver/Documents/LLLotteryTickt/LLLottery/LLLottery/AppDelegate.m:10:9: 'LLMineViewController.h' file not found
+
 @end
 
 @implementation AppDelegate
