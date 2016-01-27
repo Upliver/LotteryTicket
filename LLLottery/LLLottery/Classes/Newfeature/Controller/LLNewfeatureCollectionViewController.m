@@ -23,6 +23,13 @@ static NSString *identifier = @"item";
     // 2.注意:在UICollectionViewController中控制器的View和CollectionView不是同一个View
     //    self.view.backgroundColor = [UIColor redColor];
     self.collectionView.backgroundColor = [UIColor redColor];
+    
+    // 3. 设置分页效果
+    self.collectionView.pagingEnabled = YES;
+    // 4.去除滚动条
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+    // 5.去除弹簧效果
+    self.collectionView.bounces = NO;
 }
 
 #pragma mark -UICollectionViewDataSource
