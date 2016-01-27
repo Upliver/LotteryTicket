@@ -43,39 +43,58 @@ static NSString *identifier = @"item";
 - (void)setupChiledView
 {   // 1.添加线条
     UIImageView *guideLine = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideLine"]];
+    /*
     CGRect tempFrame = guideLine.frame;
     tempFrame.origin.x = -20;
     guideLine.frame = tempFrame;
-    [self.collectionView addSubview:guideLine];
+    */
+    guideLine.x = -20;
+     
+     [self.collectionView addSubview:guideLine];
     
     // 2.添加大图
     UIImageView *guide = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guide1"]];
     self.guide = guide;
+    /*
     CGPoint tempCenter = guide.center;
     tempCenter.x = self.view.frame.size.width * 0.5;
     guide.center = tempCenter;
+    */
+    guide.centerX = LL_WIDTH * 0.5;
     [self.collectionView addSubview:guide];
     
     // 3.添加大文本
     UIImageView *guideLargeText = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideLargeText1"]];
     self.guideLargeText = guideLargeText;
+    /*
     tempCenter = guideLargeText.center;
     tempCenter.x = self.view.frame.size.width * 0.5;
     guideLargeText.center = tempCenter;
+    */
+    guideLargeText.centerX = LL_WIDTH * 0.5;
+    /*
     tempFrame = guideLargeText.frame;
     tempFrame.origin.y = self.view.bounds.size.height * 0.7;
     guideLargeText.frame  = tempFrame;
+    */
+    guideLargeText.y = LL_HEIGHT * 0.7;
     [self.collectionView addSubview:guideLargeText];
     
     // 4.添加小文本
     UIImageView *guideSmallText = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideSmallText1"]];
     self.guideSmallText = guideSmallText;
+    /*
     tempCenter = guideSmallText.center;
     tempCenter.x = self.view.frame.size.width * 0.5;
     guideSmallText.center = tempCenter;
+    */
+    guideSmallText.centerX = LL_WIDTH * 0.5;
+    /*
     tempFrame = guideSmallText.frame;
     tempFrame.origin.y = self.view.bounds.size.height * 0.8;
     guideSmallText.frame  = tempFrame;
+    */
+    guideSmallText.y = LL_HEIGHT * 0.8;
     [self.collectionView addSubview:guideSmallText];
     
 }
@@ -87,6 +106,7 @@ static NSString *identifier = @"item";
     NSInteger page = scrollView.contentOffset.x / self.view.frame.size.width;
     
     NSLog(@"%tu",page);
+    
     // 2.根据页码生成图片名称
     NSString *guideName = [NSString stringWithFormat:@"guide%tu",page + 1];
     NSString *guideLargeTextName = [NSString stringWithFormat:@"guideLargeText%tu",page + 1];
@@ -99,7 +119,7 @@ static NSString *identifier = @"item";
     
     // 4.修改frame
         // 需要判断是向左滚动还是向右滚动
-    CGFloat width = self.view.bounds.size.width;
+    CGFloat width = LL_WIDTH;
     if (scrollView.contentOffset.x < self.guide.frame.origin.x) {
         // 意味着往左边滚动
         width = -width;
