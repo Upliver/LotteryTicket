@@ -41,7 +41,13 @@
 //        [defaults synchronize];
         // 显示新特性
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+        // layout 有默认的宽高 设置UICollectionView额外的扩展区域headerReferenceSize
+        // layout sectionInset 上.坐.下.右
         layout.itemSize = [UIScreen mainScreen].bounds.size;
+        // 设置间距
+        layout.minimumLineSpacing = 0;
+        // 设置滚动方向
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         LLNewfeatureCollectionViewController *vc = [[LLNewfeatureCollectionViewController alloc]initWithCollectionViewLayout:layout];
         vc.view.backgroundColor  = [UIColor purpleColor];
         self.window.rootViewController = vc;
