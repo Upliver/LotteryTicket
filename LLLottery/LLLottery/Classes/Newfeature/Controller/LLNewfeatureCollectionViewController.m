@@ -48,7 +48,7 @@ static NSString *identifier = @"item";
     tempFrame.origin.x = -20;
     guideLine.frame = tempFrame;
     */
-    guideLine.x = -20;
+    guideLine.x = 20;
      
      [self.collectionView addSubview:guideLine];
     
@@ -101,11 +101,45 @@ static NSString *identifier = @"item";
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+    CGFloat offset = scrollView.contentOffset.x;
+    NSLog(@"%f",offset);
+    // 4.修改frame
+    
+    // 需要判断是向左滚动还是向右滚动
+    CGFloat width = LL_WIDTH;
+    if (scrollView.contentOffset.x < self.guide.frame.origin.x) {
+        // 意味着往左边滚动
+        width = -width;
+    }
+    /*
+     CGRect tempFrame = self.guide.frame;
+     tempFrame.origin.x += width;
+     self.guide.frame = tempFrame;
+     
+     
+     tempFrame = self.guideLargeText.frame;
+     tempFrame.origin.x += width;
+     self.guideLargeText.frame = tempFrame;
+     
+     tempFrame = self.guideSmallText.frame;
+     tempFrame.origin.x += width;
+     self.guideSmallText.frame = tempFrame;
+     */
+    self.guide.x = width + offset;
+    self.guideLargeText.x = width + offset;
+    self.guideSmallText.x = width + offset;
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.guide.centerX = offset + LL_WIDTH * 0.5;
+        self.guideLargeText.centerX = offset + LL_WIDTH * 0.5;
+        self.guideSmallText.centerX = offset + LL_WIDTH * 0.5;
+    }];
+    
 //    NSLog(@"%s",__func__);
     // 1.计算当前滚动到的页码
     NSInteger page = scrollView.contentOffset.x / self.view.frame.size.width;
     
-    NSLog(@"%tu",page);
+//    NSLog(@"%tu",page);
     
     // 2.根据页码生成图片名称
     NSString *guideName = [NSString stringWithFormat:@"guide%tu",page + 1];
@@ -117,30 +151,6 @@ static NSString *identifier = @"item";
     self.guideLargeText.image = [UIImage imageNamed:guideLargeTextName];
     self.guideSmallText.image = [UIImage imageNamed:guideSmallTextName];
     
-    // 4.修改frame
-        // 需要判断是向左滚动还是向右滚动
-    CGFloat width = LL_WIDTH;
-    if (scrollView.contentOffset.x < self.guide.frame.origin.x) {
-        // 意味着往左边滚动
-        width = -width;
-    }
-    /*
-    CGRect tempFrame = self.guide.frame;
-    tempFrame.origin.x += width;
-    self.guide.frame = tempFrame;
-
-    
-    tempFrame = self.guideLargeText.frame;
-    tempFrame.origin.x += width;
-    self.guideLargeText.frame = tempFrame;
-    
-    tempFrame = self.guideSmallText.frame;
-    tempFrame.origin.x += width;
-    self.guideSmallText.frame = tempFrame;
-     */
-    self.guide.x += width;
-    self.guideLargeText.x += width;
-    self.guideSmallText.x += width;
 }
 
 #pragma mark -UICollectionViewDataSource
