@@ -13,6 +13,8 @@
 		A82B29381C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */; };
 		A82C80161C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82C80151C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m */; };
 		A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF831C59032600C68342 /* UIView+Frame.m */; };
+		A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF891C59430900C68342 /* LLCollectionViewCell.m */; };
+		A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */; };
 		A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A862415E1C4AD2410048B872 /* LLTabBar.m */; };
 		A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A86241611C4AD9990048B872 /* LLTabBarButton.m */; };
 		A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */; };
@@ -43,6 +45,9 @@
 		A82C80151C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNewfeatureCollectionViewController.m; sourceTree = "<group>"; };
 		A83BBF821C59032600C68342 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		A83BBF831C59032600C68342 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		A83BBF881C59430900C68342 /* LLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCollectionViewCell.h; sourceTree = "<group>"; };
+		A83BBF891C59430900C68342 /* LLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCollectionViewCell.m; sourceTree = "<group>"; };
+		A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLCollectionViewCell.xib; sourceTree = "<group>"; };
 		A862415D1C4AD2410048B872 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
 		A862415E1C4AD2410048B872 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
 		A86241601C4AD9990048B872 /* LLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarButton.h; sourceTree = "<group>"; };
@@ -145,6 +150,9 @@
 		A82C80131C53D391008C2EB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A83BBF881C59430900C68342 /* LLCollectionViewCell.h */,
+				A83BBF891C59430900C68342 /* LLCollectionViewCell.m */,
+				A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -463,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */,
 				A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */,
 				A8A1EDEF1C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */,
 				A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */,
@@ -486,6 +495,7 @@
 				A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */,
 				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,
 				A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */,
+				A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */,
 				A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */,
 				A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */,
 				A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */,

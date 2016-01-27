@@ -7,6 +7,7 @@
 //
 
 #import "LLNewfeatureCollectionViewController.h"
+#import "LLCollectionViewCell.h"
 
 @interface LLNewfeatureCollectionViewController ()
 
@@ -18,12 +19,15 @@
 
 @implementation LLNewfeatureCollectionViewController
 
-static NSString *identifier = @"item";
+static NSString *identifier = @"customItem";
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    // 1.注册一个cell
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
+    // 1.注册一个cell--系统的
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
+    UINib *nib = [UINib nibWithNibName:@"LLCollectionViewCell" bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:identifier];
     // 2.注意:在UICollectionViewController中控制器的View和CollectionView不是同一个View
     //    self.view.backgroundColor = [UIColor redColor];
     self.collectionView.backgroundColor = [UIColor redColor];
@@ -35,19 +39,28 @@ static NSString *identifier = @"item";
     // 5.去除弹簧效果
     self.collectionView.bounces = NO;
     
-    // 6.添加其他子控件
-    [self setupChiledView];
-
-}
-
-- (void)setupChiledView
-{   // 1.添加线条
+    // 1.添加线条
     UIImageView *guideLine = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideLine"]];
     /*
-    CGRect tempFrame = guideLine.frame;
-    tempFrame.origin.x = -20;
-    guideLine.frame = tempFrame;
-    */
+     CGRect tempFrame = guideLine.frame;
+     tempFrame.origin.x = -20;
+     guideLine.frame = tempFrame;
+     */
+    guideLine.x = -20;
+    
+    [self.collectionView addSubview:guideLine];
+
+    
+    // 6.添加其他子控件
+    // [self setupChiledView];
+
+}
+/*
+- (void)setupChiledView
+{
+    // 1.添加线条
+    UIImageView *guideLine = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideLine"]];
+
     guideLine.x = 20;
      
      [self.collectionView addSubview:guideLine];
@@ -55,50 +68,31 @@ static NSString *identifier = @"item";
     // 2.添加大图
     UIImageView *guide = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guide1"]];
     self.guide = guide;
-    /*
-    CGPoint tempCenter = guide.center;
-    tempCenter.x = self.view.frame.size.width * 0.5;
-    guide.center = tempCenter;
-    */
+
     guide.centerX = LL_WIDTH * 0.5;
     [self.collectionView addSubview:guide];
     
     // 3.添加大文本
     UIImageView *guideLargeText = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideLargeText1"]];
     self.guideLargeText = guideLargeText;
-    /*
-    tempCenter = guideLargeText.center;
-    tempCenter.x = self.view.frame.size.width * 0.5;
-    guideLargeText.center = tempCenter;
-    */
+
     guideLargeText.centerX = LL_WIDTH * 0.5;
-    /*
-    tempFrame = guideLargeText.frame;
-    tempFrame.origin.y = self.view.bounds.size.height * 0.7;
-    guideLargeText.frame  = tempFrame;
-    */
+
     guideLargeText.y = LL_HEIGHT * 0.7;
     [self.collectionView addSubview:guideLargeText];
     
     // 4.添加小文本
     UIImageView *guideSmallText = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideSmallText1"]];
     self.guideSmallText = guideSmallText;
-    /*
-    tempCenter = guideSmallText.center;
-    tempCenter.x = self.view.frame.size.width * 0.5;
-    guideSmallText.center = tempCenter;
-    */
+
     guideSmallText.centerX = LL_WIDTH * 0.5;
-    /*
-    tempFrame = guideSmallText.frame;
-    tempFrame.origin.y = self.view.bounds.size.height * 0.8;
-    guideSmallText.frame  = tempFrame;
-    */
+
     guideSmallText.y = LL_HEIGHT * 0.8;
     [self.collectionView addSubview:guideSmallText];
     
 }
-
+*/
+/*
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     CGFloat offset = scrollView.contentOffset.x;
@@ -111,20 +105,7 @@ static NSString *identifier = @"item";
         // 意味着往左边滚动
         width = -width;
     }
-    /*
-     CGRect tempFrame = self.guide.frame;
-     tempFrame.origin.x += width;
-     self.guide.frame = tempFrame;
-     
-     
-     tempFrame = self.guideLargeText.frame;
-     tempFrame.origin.x += width;
-     self.guideLargeText.frame = tempFrame;
-     
-     tempFrame = self.guideSmallText.frame;
-     tempFrame.origin.x += width;
-     self.guideSmallText.frame = tempFrame;
-     */
+
     self.guide.x = width + offset;
     self.guideLargeText.x = width + offset;
     self.guideSmallText.x = width + offset;
@@ -153,6 +134,13 @@ static NSString *identifier = @"item";
     
 }
 
+*/
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    
+}
+
 #pragma mark -UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -162,20 +150,24 @@ static NSString *identifier = @"item";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-    
-    // UITabelView 和 UICollectionView有点不太一样--UICollectionView中除了contentView没有其他默认子控件
-    // 设置cell的颜色
-    cell.backgroundColor = [UIColor greenColor];
-    
-    // 创建背景图片
-    UIImageView *iv = [[UIImageView alloc]init];
-    
-    NSString *imageName = [NSString stringWithFormat:@"guide%ldBackground",indexPath.item + 1];
-    UIImage *image = [UIImage imageNamed:imageName];
-    iv.image = image;
-    iv.frame = self.view.bounds;
-    [cell.contentView addSubview:iv];
+    // 1. 创建自定义cell
+    LLCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    // 2.赋值
+    [cell setIndexPath:indexPath count:4];
+    // 3.返回cell
+//    
+//    // UITabelView 和 UICollectionView有点不太一样--UICollectionView中除了contentView没有其他默认子控件
+//    // 设置cell的颜色
+//    cell.backgroundColor = [UIColor greenColor];
+//    
+//    // 创建背景图片
+//    UIImageView *iv = [[UIImageView alloc]init];
+//    
+//    NSString *imageName = [NSString stringWithFormat:@"guide%ldBackground",indexPath.item + 1];
+//    UIImage *image = [UIImage imageNamed:imageName];
+//    iv.image = image;
+//    iv.frame = self.view.bounds;
+//    [cell.contentView addSubview:iv];
     return cell;
 
 }
