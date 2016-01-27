@@ -47,15 +47,15 @@ static NSString *identifier = @"item";
     tempFrame.origin.x = -20;
     guideLine.frame = tempFrame;
     [self.collectionView addSubview:guideLine];
+    
     // 2.添加大图
     UIImageView *guide = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guide1"]];
     self.guide = guide;
     CGPoint tempCenter = guide.center;
     tempCenter.x = self.view.frame.size.width * 0.5;
     guide.center = tempCenter;
-    
-    
     [self.collectionView addSubview:guide];
+    
     // 3.添加大文本
     UIImageView *guideLargeText = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideLargeText1"]];
     self.guideLargeText = guideLargeText;
@@ -66,6 +66,7 @@ static NSString *identifier = @"item";
     tempFrame.origin.y = self.view.bounds.size.height * 0.7;
     guideLargeText.frame  = tempFrame;
     [self.collectionView addSubview:guideLargeText];
+    
     // 4.添加小文本
     UIImageView *guideSmallText = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guideSmallText1"]];
     self.guideSmallText = guideSmallText;
@@ -103,9 +104,11 @@ static NSString *identifier = @"item";
         // 意味着往左边滚动
         width = -width;
     }
+    /*
     CGRect tempFrame = self.guide.frame;
     tempFrame.origin.x += width;
     self.guide.frame = tempFrame;
+
     
     tempFrame = self.guideLargeText.frame;
     tempFrame.origin.x += width;
@@ -114,6 +117,10 @@ static NSString *identifier = @"item";
     tempFrame = self.guideSmallText.frame;
     tempFrame.origin.x += width;
     self.guideSmallText.frame = tempFrame;
+     */
+    self.guide.x += width;
+    self.guideLargeText.x += width;
+    self.guideSmallText.x += width;
 }
 
 #pragma mark -UICollectionViewDataSource
