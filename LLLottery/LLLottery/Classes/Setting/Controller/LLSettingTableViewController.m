@@ -16,8 +16,8 @@
 //    
 //} LLSettingType;
 
-#define LLSettingTypeAlert @"alert"
-#define LLSettingTypePush @"push"
+//#define LLSettingTypeAlert @"alert"
+//#define LLSettingTypePush @"push"
 
 @interface LLSettingTableViewController ()
 
@@ -65,6 +65,7 @@
         LLSettingItem *item22 = [[LLSettingItem alloc] init];
         item22.icon = @"more_homeshake";
         item22.title = @"使用摇一摇机选";
+        item22.type = LLSettingTypeAlert;
         // 将第二组数据模型添加到数组中
         NSArray *group2 = @[item21,item22];
         // 3.将两组的数组添加到大数组中
@@ -197,6 +198,15 @@
         NSLog(@"push到新的控制器中");
     }
     */
+    
+    // 1.取出对应的组
+    NSArray *group = _datas[indexPath.section];
+    // 2.取出对应的行
+    LLSettingItem *item = group[indexPath.row];
+    // 3.执行存放好的代码(方法)
+    if (item.type == LLSettingTypeAlert) {
+        [item show];
+    }
 }
 
 

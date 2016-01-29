@@ -7,11 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef enum {
 
+    LLSettingTypeAlert = 99,
+    LLSettingTypePush
+
+} LLSettingType;
 @interface LLSettingItem : NSObject
-
+/**
+ *  cell头像
+ */
 @property(nonatomic, copy) NSString *icon;
+/**
+ *  cell文字
+ */
 @property(nonatomic, copy) NSString *title;
+/**
+ *  是否有弹窗
+ */
+@property(nonatomic, assign) LLSettingType type;
 
-
+- (void)show;
 @end

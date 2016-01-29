@@ -10,4 +10,10 @@
 
 @implementation LLSettingItem
 
+- (void)show
+{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"没有新的版本可以更新" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
+}
+
 @end
