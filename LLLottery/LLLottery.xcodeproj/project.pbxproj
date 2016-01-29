@@ -14,6 +14,7 @@
 		A82CECCA1C5B55D300ED8A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82CECC91C5B55D300ED8A65 /* Assets.xcassets */; };
 		A82CECD21C5B592600ED8A65 /* LLSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82CECD11C5B592600ED8A65 /* LLSettingTableViewController.m */; };
 		A82CECD41C5B649400ED8A65 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82CECD31C5B649400ED8A65 /* setting.plist */; };
+		A82CECD71C5B7D3500ED8A65 /* LLSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A82CECD61C5B7D3500ED8A65 /* LLSettingItem.m */; };
 		A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF831C59032600C68342 /* UIView+Frame.m */; };
 		A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF891C59430900C68342 /* LLCollectionViewCell.m */; };
 		A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */; };
@@ -48,6 +49,8 @@
 		A82CECD01C5B592600ED8A65 /* LLSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSettingTableViewController.h; sourceTree = "<group>"; };
 		A82CECD11C5B592600ED8A65 /* LLSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSettingTableViewController.m; sourceTree = "<group>"; };
 		A82CECD31C5B649400ED8A65 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		A82CECD51C5B7D3500ED8A65 /* LLSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSettingItem.h; sourceTree = "<group>"; };
+		A82CECD61C5B7D3500ED8A65 /* LLSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSettingItem.m; sourceTree = "<group>"; };
 		A83BBF821C59032600C68342 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		A83BBF831C59032600C68342 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		A83BBF881C59430900C68342 /* LLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCollectionViewCell.h; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 		A82CECCD1C5B590A00ED8A65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A82CECD51C5B7D3500ED8A65 /* LLSettingItem.h */,
+				A82CECD61C5B7D3500ED8A65 /* LLSettingItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 				A8A1EDF01C4ACA2200A2FB2F /* LLHallTableViewController.m in Sources */,
 				A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */,
 				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,
+				A82CECD71C5B7D3500ED8A65 /* LLSettingItem.m in Sources */,
 				A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */,
 				A82CECD21C5B592600ED8A65 /* LLSettingTableViewController.m in Sources */,
 				A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */,

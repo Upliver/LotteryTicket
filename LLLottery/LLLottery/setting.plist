@@ -42,6 +42,8 @@
 			<string>MoreUpdate</string>
 			<key>title</key>
 			<string>检查新版本</string>
+			<key>type</key>
+			<string>alert</string>
 		</dict>
 		<dict>
 			<key>icon</key>
