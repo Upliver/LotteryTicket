@@ -12,6 +12,8 @@
 		A82B29381C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */; };
 		A82C80161C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82C80151C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m */; };
 		A82CECCA1C5B55D300ED8A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82CECC91C5B55D300ED8A65 /* Assets.xcassets */; };
+		A82CECD21C5B592600ED8A65 /* LLSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82CECD11C5B592600ED8A65 /* LLSettingTableViewController.m */; };
+		A82CECD41C5B649400ED8A65 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82CECD31C5B649400ED8A65 /* setting.plist */; };
 		A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF831C59032600C68342 /* UIView+Frame.m */; };
 		A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF891C59430900C68342 /* LLCollectionViewCell.m */; };
 		A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */; };
@@ -43,6 +45,9 @@
 		A82C80141C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNewfeatureCollectionViewController.h; sourceTree = "<group>"; };
 		A82C80151C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNewfeatureCollectionViewController.m; sourceTree = "<group>"; };
 		A82CECC91C5B55D300ED8A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A82CECD01C5B592600ED8A65 /* LLSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSettingTableViewController.h; sourceTree = "<group>"; };
+		A82CECD11C5B592600ED8A65 /* LLSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSettingTableViewController.m; sourceTree = "<group>"; };
+		A82CECD31C5B649400ED8A65 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
 		A83BBF821C59032600C68342 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		A83BBF831C59032600C68342 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		A83BBF881C59430900C68342 /* LLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCollectionViewCell.h; sourceTree = "<group>"; };
@@ -117,6 +122,7 @@
 				A82CECC91C5B55D300ED8A65 /* Assets.xcassets */,
 				A815772F1C4AA75C00BB66B5 /* Info.plist */,
 				A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */,
+				A82CECD31C5B649400ED8A65 /* setting.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,9 +163,51 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A82CECCB1C5B590A00ED8A65 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A82CECCC1C5B590A00ED8A65 /* Controller */,
+				A82CECCD1C5B590A00ED8A65 /* Model */,
+				A82CECCE1C5B590A00ED8A65 /* Others */,
+				A82CECCF1C5B590A00ED8A65 /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A82CECCC1C5B590A00ED8A65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A82CECD01C5B592600ED8A65 /* LLSettingTableViewController.h */,
+				A82CECD11C5B592600ED8A65 /* LLSettingTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A82CECCD1C5B590A00ED8A65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A82CECCE1C5B590A00ED8A65 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		A82CECCF1C5B590A00ED8A65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A8A1EDBB1C4ACA2200A2FB2F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A82CECCB1C5B590A00ED8A65 /* Setting */,
 				A82C80101C53D391008C2EB9 /* Newfeature */,
 				A8A1EDBC1C4ACA2200A2FB2F /* Arena */,
 				A8A1EDC31C4ACA2200A2FB2F /* Discover */,
@@ -477,6 +525,7 @@
 				A8A1EDF61C4ACA2200A2FB2F /* LLMineViewController.storyboard in Resources */,
 				A8A1EDF31C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard in Resources */,
 				A8A1EDF11C4ACA2200A2FB2F /* LLHallTableViewController.storyboard in Resources */,
+				A82CECD41C5B649400ED8A65 /* setting.plist in Resources */,
 				A82CECCA1C5B55D300ED8A65 /* Assets.xcassets in Resources */,
 				A8A1EDED1C4ACA2200A2FB2F /* LLArenaViewController.storyboard in Resources */,
 			);
@@ -495,6 +544,7 @@
 				A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */,
 				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,
 				A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */,
+				A82CECD21C5B592600ED8A65 /* LLSettingTableViewController.m in Sources */,
 				A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */,
 				A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */,
 				A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "LLMineViewController.h"
+#import "LLSettingTableViewController.h"
 
 @interface LLMineViewController ()
 
@@ -27,12 +28,12 @@
 - (void)setting
 {
     // 1.创建控制器
-    UIViewController *vc = [[UIViewController alloc]init];
-    vc.view.backgroundColor = [UIColor purpleColor];
+    LLSettingTableViewController *settingVc = [[LLSettingTableViewController alloc]init];
+//    settingVc.view.backgroundColor = [UIColor purpleColor];
     
         // 告诉系统,当push子控制器的时候,隐藏底部的tabBar
     //vc.hidesBottomBarWhenPushed = YES;
     // 2.push
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:settingVc animated:YES];
 }
 @end
