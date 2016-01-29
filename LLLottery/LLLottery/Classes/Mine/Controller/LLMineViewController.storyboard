@@ -16,11 +16,72 @@
                     <view key="view" contentMode="scaleToFill" id="3CB-7E-K2X">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="dpH-fq-DAe">
+                                <rect key="frame" x="152" y="0.0" width="296" height="138"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱账号可以直接登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtF-5S-qFB">
+                                <rect key="frame" x="198" y="158" width="204" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uze-Yl-Up7">
+                                <rect key="frame" x="163" y="198" width="275" height="38"/>
+                                <state key="normal" title="登录" backgroundImage="login_button_login_normal"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginSeperator" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-tF-dJw">
+                                <rect key="frame" x="0.0" y="256" width="600" height="8"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用其他账号登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfa-al-5F7">
+                                <rect key="frame" x="232" y="250" width="136" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtz-ew-BkO">
+                                <rect key="frame" x="319.5" y="314" width="115" height="31"/>
+                                <state key="normal" title="微信登录" backgroundImage="btn_white_background">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ4-9R-X7G">
+                                <rect key="frame" x="163" y="314" width="115" height="31"/>
+                                <state key="normal" title="新浪登录" backgroundImage="btn_white_background">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfa-al-5F7" firstAttribute="centerX" secondItem="3CB-7E-K2X" secondAttribute="centerX" id="6e1-tQ-vG1"/>
+                            <constraint firstItem="cfa-al-5F7" firstAttribute="centerY" secondItem="yXl-tF-dJw" secondAttribute="centerY" id="JP7-Dx-gS1"/>
+                            <constraint firstItem="yXl-tF-dJw" firstAttribute="top" secondItem="uze-Yl-Up7" secondAttribute="bottom" constant="20" id="Kpk-Do-5xu"/>
+                            <constraint firstItem="yXl-tF-dJw" firstAttribute="leading" secondItem="3CB-7E-K2X" secondAttribute="leading" id="MOA-Sk-Rey"/>
+                            <constraint firstItem="LJ4-9R-X7G" firstAttribute="centerX" secondItem="3CB-7E-K2X" secondAttribute="centerX" constant="-78" id="MPv-u3-hXs"/>
+                            <constraint firstItem="dpH-fq-DAe" firstAttribute="top" secondItem="3CB-7E-K2X" secondAttribute="top" id="NJs-ea-vFb"/>
+                            <constraint firstItem="rtz-ew-BkO" firstAttribute="leading" secondItem="LJ4-9R-X7G" secondAttribute="trailing" constant="40" id="Olq-bF-kaf"/>
+                            <constraint firstAttribute="trailing" secondItem="yXl-tF-dJw" secondAttribute="trailing" id="Pyp-Vs-WYP"/>
+                            <constraint firstItem="uze-Yl-Up7" firstAttribute="centerX" secondItem="3CB-7E-K2X" secondAttribute="centerX" id="UzH-KY-H3F"/>
+                            <constraint firstItem="LJ4-9R-X7G" firstAttribute="top" secondItem="yXl-tF-dJw" secondAttribute="bottom" constant="50" id="Wz1-Au-GP1"/>
+                            <constraint firstItem="JtF-5S-qFB" firstAttribute="top" secondItem="dpH-fq-DAe" secondAttribute="bottom" constant="20" id="XSR-EW-0dV"/>
+                            <constraint firstItem="yXl-tF-dJw" firstAttribute="centerX" secondItem="3CB-7E-K2X" secondAttribute="centerX" id="aXR-Cb-hrR"/>
+                            <constraint firstItem="uze-Yl-Up7" firstAttribute="top" secondItem="JtF-5S-qFB" secondAttribute="bottom" constant="20" id="bQC-Cg-ePk"/>
+                            <constraint firstItem="JtF-5S-qFB" firstAttribute="centerX" secondItem="3CB-7E-K2X" secondAttribute="centerX" id="edg-lP-U4K"/>
+                            <constraint firstItem="LJ4-9R-X7G" firstAttribute="centerY" secondItem="rtz-ew-BkO" secondAttribute="centerY" id="pnO-xX-gd9"/>
+                            <constraint firstItem="dpH-fq-DAe" firstAttribute="centerX" secondItem="3CB-7E-K2X" secondAttribute="centerX" id="upt-XM-RBD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o97-Jq-703" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="btn_white_background" width="115" height="31"/>
+        <image name="loginSeperator" width="194" height="8"/>
+        <image name="login_button_login_normal" width="275" height="38"/>
+    </resources>
 </document>

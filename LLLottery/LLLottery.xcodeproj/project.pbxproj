@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A815772A1C4AA75C00BB66B5 /* Assets.xcassets */; };
 		A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */; };
 		A82B29351C4C166300A1AC4B /* LLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B29341C4C166300A1AC4B /* LLNavigationController.m */; };
 		A82B29381C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */; };
 		A82C80161C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82C80151C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m */; };
+		A82CECCA1C5B55D300ED8A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82CECC91C5B55D300ED8A65 /* Assets.xcassets */; };
 		A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF831C59032600C68342 /* UIView+Frame.m */; };
 		A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF891C59430900C68342 /* LLCollectionViewCell.m */; };
 		A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */; };
@@ -34,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		A815771B1C4AA75C00BB66B5 /* LLLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A815772A1C4AA75C00BB66B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A815772D1C4AA75C00BB66B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A815772F1C4AA75C00BB66B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A82B29331C4C166300A1AC4B /* LLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationController.h; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		A82B29371C4C2CD600A1AC4B /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		A82C80141C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNewfeatureCollectionViewController.h; sourceTree = "<group>"; };
 		A82C80151C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNewfeatureCollectionViewController.m; sourceTree = "<group>"; };
+		A82CECC91C5B55D300ED8A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A83BBF821C59032600C68342 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		A83BBF831C59032600C68342 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		A83BBF881C59430900C68342 /* LLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCollectionViewCell.h; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		A815771E1C4AA75C00BB66B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A815772A1C4AA75C00BB66B5 /* Assets.xcassets */,
+				A82CECC91C5B55D300ED8A65 /* Assets.xcassets */,
 				A815772F1C4AA75C00BB66B5 /* Info.plist */,
 				A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */,
 			);
@@ -474,10 +474,10 @@
 				A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */,
 				A815772E1C4AA75C00BB66B5 /* LaunchScreen.storyboard in Resources */,
 				A8A1EDEF1C4ACA2200A2FB2F /* LLDiscoverTableViewController.storyboard in Resources */,
-				A815772B1C4AA75C00BB66B5 /* Assets.xcassets in Resources */,
 				A8A1EDF61C4ACA2200A2FB2F /* LLMineViewController.storyboard in Resources */,
 				A8A1EDF31C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard in Resources */,
 				A8A1EDF11C4ACA2200A2FB2F /* LLHallTableViewController.storyboard in Resources */,
+				A82CECCA1C5B55D300ED8A65 /* Assets.xcassets in Resources */,
 				A8A1EDED1C4ACA2200A2FB2F /* LLArenaViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

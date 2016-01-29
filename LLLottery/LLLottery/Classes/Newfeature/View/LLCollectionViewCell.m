@@ -41,8 +41,8 @@
         self.startBtn.hidden = YES;
     }
 }
+
 - (IBAction)startBtnClick:(UIButton *)sender {
-    
     // 1.拿到window
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     // 2.创建首页控制器
