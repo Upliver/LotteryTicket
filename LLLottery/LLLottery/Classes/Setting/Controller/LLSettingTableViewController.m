@@ -93,7 +93,7 @@
 - (void)addGroup0
 {
     LLSettingItem *redeemCode = [LLSettingItem initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
-    
+//    redeemCode.accessoryViewType = LLCellAccessoryViewTypeArrow;
     [self.datas addObject:@[redeemCode]];
 }
 - (void)addGroup1
@@ -154,6 +154,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        // 设置cell右边的小箭头
+        // cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.accessoryView = [[UISwitch alloc]init];
     }
     /*
     if (indexPath.section == 0) {
@@ -205,7 +208,24 @@
     // 3.设置数据
     cell.imageView.image = item.image;
     cell.textLabel.text = item.title;
-    
+    /*
+    // 4.设置cell的一个辅助视图(cell的右边的视图)
+    switch (item.accessoryViewType) {
+        case LLCellAccessoryViewTypeArrow:
+            cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"arrow_right"]];
+            break;
+        case LLCellAccessoryViewTypeSwitch:
+            cell.accessoryView = [[UISwitch alloc]init];
+            break;
+        case LLCellAccessoryViewTypeLabel:
+            cell.accessoryView = [[UILabel alloc]init];
+            break;
+            
+        default:
+            cell.accessoryView = nil;
+            break;
+    }
+     */
     return cell;
 }
 

@@ -8,12 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
+//typedef enum {
+//
+//    LLSettingTypeAlert = 99,
+//    LLSettingTypePush
+//
+//} LLSettingType;
 
-    LLSettingTypeAlert = 99,
-    LLSettingTypePush
-
-} LLSettingType;
+//typedef enum
+//{
+//    LLCellAccessoryViewTypeArrow = 99,
+//    LLCellAccessoryViewTypeSwitch,
+//    LLCellAccessoryViewTypeLabel
+//
+//} LLCellAccessoryViewType;
 
 typedef void(^myOption)();
 
@@ -29,7 +37,7 @@ typedef void(^myOption)();
 /**
  *  是否有弹窗
  */
-@property(nonatomic, assign) LLSettingType type;
+//@property(nonatomic, assign) LLSettingType type;
 
 /**
  *  定义一个名字为option的block变量,用于保存将来要执行的代码
@@ -49,6 +57,15 @@ typedef void(^myOption)();
  *  2. 有很多个cell,点击每一行要执行的操作应该由使用者决定.
  */
 //- (void)show;
+
+/*
+//记录当前cell的右边的辅助图标的样式
+@property(nonatomic, assign) LLCellAccessoryViewType accessoryViewType;
+//记录当前开关的状态@property(nonatomic, assign) BOOL open;
+记录cell右侧视图中label中显示的内容
+
+@property(nonatomic, copy) NSString *labelInfo;
+*/
 
 + (instancetype)initWithImage:(UIImage *)image title:(NSString *)title;
 

@@ -18,6 +18,7 @@
 		A83BBF841C59032600C68342 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF831C59032600C68342 /* UIView+Frame.m */; };
 		A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A83BBF891C59430900C68342 /* LLCollectionViewCell.m */; };
 		A83BBF8C1C59430900C68342 /* LLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */; };
+		A85314051C5D0D8D00E65865 /* LLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A85314041C5D0D8D00E65865 /* LLTableViewCell.m */; };
 		A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A862415E1C4AD2410048B872 /* LLTabBar.m */; };
 		A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A86241611C4AD9990048B872 /* LLTabBarButton.m */; };
 		A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDBF1C4ACA2200A2FB2F /* LLArenaViewController.m */; };
@@ -56,6 +57,8 @@
 		A83BBF881C59430900C68342 /* LLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCollectionViewCell.h; sourceTree = "<group>"; };
 		A83BBF891C59430900C68342 /* LLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCollectionViewCell.m; sourceTree = "<group>"; };
 		A83BBF8A1C59430900C68342 /* LLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLCollectionViewCell.xib; sourceTree = "<group>"; };
+		A85314031C5D0D8D00E65865 /* LLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTableViewCell.h; sourceTree = "<group>"; };
+		A85314041C5D0D8D00E65865 /* LLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTableViewCell.m; sourceTree = "<group>"; };
 		A862415D1C4AD2410048B872 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
 		A862415E1C4AD2410048B872 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
 		A86241601C4AD9990048B872 /* LLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarButton.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 		A82CECCF1C5B590A00ED8A65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A85314031C5D0D8D00E65865 /* LLTableViewCell.h */,
+				A85314041C5D0D8D00E65865 /* LLTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */,
 				A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */,
 				A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */,
+				A85314051C5D0D8D00E65865 /* LLTableViewCell.m in Sources */,
 				A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */,
 				A82B29351C4C166300A1AC4B /* LLNavigationController.m in Sources */,
 				A8A1EDF51C4ACA2200A2FB2F /* LLMineViewController.m in Sources */,
