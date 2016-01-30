@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LLSettingItem.h"
+#import "LLSettingItemArrow.h"
+#import "LLSettingItemSwitch.h"
+#import "LLSettingItemLabel.h"
 
 @interface LLTableViewCell : UITableViewCell
 
@@ -15,4 +18,5 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 // 2.接收外界传入的数据模型
 @property(nonatomic, strong) LLSettingItem *item;
+
 @end

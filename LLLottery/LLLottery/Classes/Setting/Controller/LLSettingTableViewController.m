@@ -8,6 +8,8 @@
 
 #import "LLSettingTableViewController.h"
 #import "LLSettingItem.h"
+#import "LLTableViewCell.h"
+
 
 //typedef enum {
 //    
@@ -48,38 +50,7 @@
 {
 
     if (!_datas) {
-        /*
-     NSString *path = [[NSBundle mainBundle] pathForResource:@"setting.plist" ofType:nil];
-        _datas = [NSArray arrayWithContentsOfFile:path];
-     */
-        /*
-//        // 1.创建第一组模型
-//        LLSettingItem *item11 = [[LLSettingItem alloc] init];
-//        item11.icon = @"RedeemCode";
-//        item11.title = @"使用兑换码";
-//        // 将第一组数据模型添加到数组中
-//        NSArray *group1 = @[item11];
-//        // 2.创建第二组模型
-//        LLSettingItem *item21 = [[LLSettingItem alloc] init];
-//        item21.icon = @"MorePush";
-//        item21.title = @"推送和提醒";
-//        
-//        LLSettingItem *item22 = [[LLSettingItem alloc] init];
-//        item22.icon = @"more_homeshake";
-//        item22.title = @"使用摇一摇机选";
-////        item22.type = LLSettingTypeAlert;
-//        item22.option = ^(){
-//            
-//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"没有新的版本可以更新" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-//            [alert show];
-//            
-//        };
-//        // 将第二组数据模型添加到数组中
-//        NSArray *group2 = @[item21,item22];
-//        // 3.将两组的数组添加到大数组中
-//        _datas = @[group1,group2];
-        
-        */
+
         // 1.创建数组
         _datas = [NSMutableArray array];
         // 2.添加每一组数据
@@ -92,25 +63,30 @@
 
 - (void)addGroup0
 {
-    LLSettingItem *redeemCode = [LLSettingItem initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
-//    redeemCode.accessoryViewType = LLCellAccessoryViewTypeArrow;
+    LLSettingItem *redeemCode = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    
     [self.datas addObject:@[redeemCode]];
 }
 - (void)addGroup1
 {
-    LLSettingItem *morePush = [LLSettingItem initWithImage:[UIImage imageNamed:@"MorePush"] title:@"推送和提醒"];
-    LLSettingItem *more_homeshake = [LLSettingItem initWithImage:[UIImage imageNamed:@"more_homeshake"] title:@"摇一摇机选"];
-    LLSettingItem *sound_Effect = [LLSettingItem initWithImage:[UIImage imageNamed:@"sound_Effect"] title:@"声音效果"];
-    LLSettingItem *More_LotteryRecommend = [LLSettingItem initWithImage:[UIImage imageNamed:@"More_LotteryRecommend"] title:@"购彩小助手"];
+    LLSettingItem *morePush = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MorePush"] title:@"推送和提醒"];
+    
+    LLSettingItemSwitch *more_homeshake = [LLSettingItemSwitch initWithImage:[UIImage imageNamed:@"more_homeshake"] title:@"摇一摇机选"];
+    more_homeshake.open = YES;
+    
+    
+    LLSettingItem *sound_Effect = [LLSettingItemSwitch initWithImage:[UIImage imageNamed:@"sound_Effect"] title:@"声音效果"];
+    
+    LLSettingItem *More_LotteryRecommend = [LLSettingItemSwitch initWithImage:[UIImage imageNamed:@"More_LotteryRecommend"] title:@"购彩小助手"];
     
     [self.datas addObject:@[morePush,more_homeshake,sound_Effect,More_LotteryRecommend]];
 }
 - (void)addGroup2
 {
-    LLSettingItem *redeemCode = [LLSettingItem initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    LLSettingItem *redeemCode = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
     LLSettingItem *MoreShare = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreShare"] title:@"分享"];
-    LLSettingItem *MoreNetease = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
-    LLSettingItem *MoreAbout = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreAbout"] title:@"关于"];
+    LLSettingItem *MoreNetease = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
+    LLSettingItem *MoreAbout = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreAbout"] title:@"关于"];
     [self.datas addObject:@[redeemCode,MoreShare,MoreNetease,MoreAbout]];
 
 }
@@ -150,6 +126,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    /*
     static NSString *identifier = @"customCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
@@ -158,49 +136,7 @@
         // cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.accessoryView = [[UISwitch alloc]init];
     }
-    /*
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            cell.textLabel.text = @"使用兑换码";
-        }
-    }else if(indexPath.section == 1){
-        if (indexPath.row == 0) {
-            cell.textLabel.text = @"使用兑换码";
-        }else if(indexPath.row == 1){
-            cell.textLabel.text = @"使用兑换码";
 
-        }else if(indexPath.row == 2){
-            cell.textLabel.text = @"使用兑换码";
-
-        }else if(indexPath.row == 3){
-            cell.textLabel.text = @"使用兑换码";
-
-        }
-    }else if(indexPath.section == 2){
-        if (indexPath.row == 0) {
-            cell.textLabel.text = @"使用兑换码";
-
-        }else if(indexPath.row == 1){
-            cell.textLabel.text = @"使用兑换码";
-
-        }else if(indexPath.row == 2){
-            cell.textLabel.text = @"使用兑换码";
-
-        }else if(indexPath.row == 3){
-            cell.textLabel.text = @"使用兑换码";
-
-        }
-    }
-     */
-    /*
-    // 1.取出对应的组
-    NSArray *group = _datas[indexPath.section];
-    // 2.取出对应的行
-    NSDictionary *row = group[indexPath.row];
-    // 3.设置数据
-    cell.imageView.image = [UIImage imageNamed:row[@"icon"]];
-    cell.textLabel.text = row[@"title"];
-     */
     // 1.取出对应的组
     NSArray *group = _datas[indexPath.section];
     // 2.取出对应的行
@@ -208,6 +144,7 @@
     // 3.设置数据
     cell.imageView.image = item.image;
     cell.textLabel.text = item.title;
+         */
     /*
     // 4.设置cell的一个辅助视图(cell的右边的视图)
     switch (item.accessoryViewType) {
@@ -226,6 +163,15 @@
             break;
     }
      */
+    // 1.创建cell
+    LLTableViewCell *cell = [LLTableViewCell cellWithTableView:tableView];
+    // 2.传递当前行对应的数据模型
+        // 2.1.取出对应的组
+    NSArray *group = _datas[indexPath.section];
+        // 2.2.取出对应的行
+    LLSettingItem *item = group[indexPath.row];
+    cell.item = item;
+    // 3.返回cell
     return cell;
 }
 

@@ -61,7 +61,8 @@ typedef void(^myOption)();
 /*
 //记录当前cell的右边的辅助图标的样式
 @property(nonatomic, assign) LLCellAccessoryViewType accessoryViewType;
-//记录当前开关的状态@property(nonatomic, assign) BOOL open;
+//记录当前开关的状态
+@property(nonatomic, assign) BOOL open;
 记录cell右侧视图中label中显示的内容
 
 @property(nonatomic, copy) NSString *labelInfo;
