@@ -16,4 +16,12 @@
     [alert show];
 }
 
++ (instancetype)initWithImage:(UIImage *)image title:(NSString *)title
+{
+    LLSettingItem *item = [[LLSettingItem alloc]init];
+    item.title = title;
+    item.image = image;
+    return item;
+}
+
 @end

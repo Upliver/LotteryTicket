@@ -19,9 +19,9 @@ typedef void(^myOption)();
 
 @interface LLSettingItem : NSObject
 /**
- *  cell头像
+ *  图标
  */
-@property(nonatomic, copy) NSString *icon;
+@property(nonatomic, strong) UIImage *image;
 /**
  *  cell文字
  */
@@ -32,7 +32,7 @@ typedef void(^myOption)();
 @property(nonatomic, assign) LLSettingType type;
 
 /**
- *  定义一个名字为option的block变量
+ *  定义一个名字为option的block变量,用于保存将来要执行的代码
  */
 //@property(nonatomic, copy) void (^option)();
 // 或者用下面的方式代替上面的方式,代码的可读性就会加强
@@ -48,5 +48,8 @@ typedef void(^myOption)();
  *  1. 有很多个cell每个cell的点击需要执行的代码不一样,如果写死,将来需求变了会很麻烦
  *  2. 有很多个cell,点击每一行要执行的操作应该由使用者决定.
  */
-- (void)show;
+//- (void)show;
+
++ (instancetype)initWithImage:(UIImage *)image title:(NSString *)title;
+
 @end

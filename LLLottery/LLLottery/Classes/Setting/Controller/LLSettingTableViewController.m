@@ -21,7 +21,7 @@
 
 @interface LLSettingTableViewController ()
 
-@property(nonatomic, strong) NSArray *datas;
+@property(nonatomic, strong) NSMutableArray *datas;
 
 @end
 
@@ -48,40 +48,73 @@
 {
 
     if (!_datas) {
-     /*
+        /*
      NSString *path = [[NSBundle mainBundle] pathForResource:@"setting.plist" ofType:nil];
         _datas = [NSArray arrayWithContentsOfFile:path];
      */
-        // 1.创建第一组模型
-        LLSettingItem *item11 = [[LLSettingItem alloc] init];
-        item11.icon = @"RedeemCode";
-        item11.title = @"使用兑换码";
-        // 将第一组数据模型添加到数组中
-        NSArray *group1 = @[item11];
-        // 2.创建第二组模型
-        LLSettingItem *item21 = [[LLSettingItem alloc] init];
-        item21.icon = @"MorePush";
-        item21.title = @"推送和提醒";
+        /*
+//        // 1.创建第一组模型
+//        LLSettingItem *item11 = [[LLSettingItem alloc] init];
+//        item11.icon = @"RedeemCode";
+//        item11.title = @"使用兑换码";
+//        // 将第一组数据模型添加到数组中
+//        NSArray *group1 = @[item11];
+//        // 2.创建第二组模型
+//        LLSettingItem *item21 = [[LLSettingItem alloc] init];
+//        item21.icon = @"MorePush";
+//        item21.title = @"推送和提醒";
+//        
+//        LLSettingItem *item22 = [[LLSettingItem alloc] init];
+//        item22.icon = @"more_homeshake";
+//        item22.title = @"使用摇一摇机选";
+////        item22.type = LLSettingTypeAlert;
+//        item22.option = ^(){
+//            
+//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"没有新的版本可以更新" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+//            [alert show];
+//            
+//        };
+//        // 将第二组数据模型添加到数组中
+//        NSArray *group2 = @[item21,item22];
+//        // 3.将两组的数组添加到大数组中
+//        _datas = @[group1,group2];
         
-        LLSettingItem *item22 = [[LLSettingItem alloc] init];
-        item22.icon = @"more_homeshake";
-        item22.title = @"使用摇一摇机选";
-//        item22.type = LLSettingTypeAlert;
-        item22.option = ^(){
-            
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"没有新的版本可以更新" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-            [alert show];
-            
-        };
-        // 将第二组数据模型添加到数组中
-        NSArray *group2 = @[item21,item22];
-        // 3.将两组的数组添加到大数组中
-        _datas = @[group1,group2];
+        */
+        // 1.创建数组
+        _datas = [NSMutableArray array];
+        // 2.添加每一组数据
+        [self addGroup0];
+        [self addGroup1];
+        [self addGroup2];
     }
-
-
     return _datas;
 }
+
+- (void)addGroup0
+{
+    LLSettingItem *redeemCode = [LLSettingItem initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    
+    [self.datas addObject:@[redeemCode]];
+}
+- (void)addGroup1
+{
+    LLSettingItem *morePush = [LLSettingItem initWithImage:[UIImage imageNamed:@"MorePush"] title:@"推送和提醒"];
+    LLSettingItem *more_homeshake = [LLSettingItem initWithImage:[UIImage imageNamed:@"more_homeshake"] title:@"摇一摇机选"];
+    LLSettingItem *sound_Effect = [LLSettingItem initWithImage:[UIImage imageNamed:@"sound_Effect"] title:@"声音效果"];
+    LLSettingItem *More_LotteryRecommend = [LLSettingItem initWithImage:[UIImage imageNamed:@"More_LotteryRecommend"] title:@"购彩小助手"];
+    
+    [self.datas addObject:@[morePush,more_homeshake,sound_Effect,More_LotteryRecommend]];
+}
+- (void)addGroup2
+{
+    LLSettingItem *redeemCode = [LLSettingItem initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    LLSettingItem *MoreShare = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreShare"] title:@"分享"];
+    LLSettingItem *MoreNetease = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
+    LLSettingItem *MoreAbout = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreAbout"] title:@"关于"];
+    [self.datas addObject:@[redeemCode,MoreShare,MoreNetease,MoreAbout]];
+
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -170,7 +203,7 @@
     // 2.取出对应的行
     LLSettingItem *item = group[indexPath.row];
     // 3.设置数据
-    cell.imageView.image = [UIImage imageNamed:item.icon];
+    cell.imageView.image = item.image;
     cell.textLabel.text = item.title;
     
     return cell;
