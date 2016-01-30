@@ -8,6 +8,13 @@
 
 #import "LLTableViewCell.h"
 
+@interface LLTableViewCell ()
+@property(nonatomic, strong) UIImageView *arrowAccessoryView;
+@property(nonatomic, strong) UISwitch *switchAccessoryView;
+@property(nonatomic, strong) UILabel *lableAccessoryView;
+
+@end
+
 @implementation LLTableViewCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView
@@ -41,13 +48,24 @@
     // 1.判断当前cell对应的模型的类型
     if ([self.item isKindOfClass:[LLSettingItemArrow class]]) {
         // 箭头
-        self.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"arrow_right"]];
+//        self.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"arrow_right"]];
+        self.accessoryView = self.arrowAccessoryView;
     }else if ([self.item isKindOfClass:[LLSettingItemSwitch class]]){
         // 开关
-        self.accessoryView = [[UISwitch alloc]init];
+//        UISwitch *sw = [[UISwitch alloc]init];
+        // 根据模型的数据,来设置开关的状态
+        LLSettingItemSwitch *switchItem = (LLSettingItemSwitch *)self.item;
+//        sw.on = switchItem.open;
+//        self.accessoryView = sw;
+        self.switchAccessoryView.on = NO;
+        self.switchAccessoryView.on = switchItem.open;
+        self.accessoryView = self.switchAccessoryView;
     }else if([self.item isKindOfClass:[LLSettingItemLabel class]]){
         // 标签
-        self.accessoryView = [[UILabel alloc] init];
+//        self.accessoryView = [[UILabel alloc] init];
+        self.accessoryView = self.lableAccessoryView;
+    }else {
+        self.accessoryView = nil;
     }
 }
 
@@ -59,6 +77,30 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+#pragma mark - lazy
+- (UIImageView *)arrowAccessoryView
+{
+    if (_arrowAccessoryView == nil) {
+        _arrowAccessoryView = [[UIImageView alloc]initWithImage:[UIImage  imageNamed:@"arrow_right"]];
+    }
+    return _arrowAccessoryView;
+}
+- (UISwitch *)switchAccessoryView
+{
+    if (!_switchAccessoryView) {
+        _switchAccessoryView = [[UISwitch alloc]init];
+    }
+    return _switchAccessoryView;
+}
+
+- (UILabel *)lableAccessoryView
+{
+    if (!_lableAccessoryView) {
+        _lableAccessoryView = [[UILabel alloc]init];
+    }
+    return _lableAccessoryView;
 }
 
 @end
