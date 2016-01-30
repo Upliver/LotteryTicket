@@ -26,6 +26,7 @@
 @end
 
 @implementation LLSettingTableViewController
+
 - (instancetype)initWithStyle:(UITableViewStyle)style{
     if (self = [super initWithStyle:UITableViewStyleGrouped]) {
         
@@ -65,7 +66,13 @@
         LLSettingItem *item22 = [[LLSettingItem alloc] init];
         item22.icon = @"more_homeshake";
         item22.title = @"使用摇一摇机选";
-        item22.type = LLSettingTypeAlert;
+//        item22.type = LLSettingTypeAlert;
+        item22.option = ^(){
+            
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"没有新的版本可以更新" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            [alert show];
+            
+        };
         // 将第二组数据模型添加到数组中
         NSArray *group2 = @[item21,item22];
         // 3.将两组的数组添加到大数组中
@@ -79,6 +86,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"设置";
 }
 
 
@@ -203,9 +211,14 @@
     NSArray *group = _datas[indexPath.section];
     // 2.取出对应的行
     LLSettingItem *item = group[indexPath.row];
+    /*
     // 3.执行存放好的代码(方法)
     if (item.type == LLSettingTypeAlert) {
         [item show];
+    }
+     */
+    if (item.option != nil) {
+        item.option();
     }
 }
 
