@@ -50,11 +50,14 @@
 {
     LLSettingItem *morePush = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MorePush"] title:@"推送和提醒"];
     
+    // 解决block的循环引用问题
+    __weak typeof(self) weakSelf = self;
+    __weak typeof(morePush) weakMorePush = morePush;
     morePush.option = ^{
         LLPushTableViewController *pushVc = [[LLPushTableViewController alloc]init];
-#warning ------待修改
-        pushVc.title = morePush.title;
-        [self.navigationController pushViewController:pushVc animated:YES];
+
+        pushVc.title = weakMorePush.title;
+        [weakSelf.navigationController pushViewController:pushVc animated:YES];
     };
     
     LLSettingItemSwitch *more_homeshake = [LLSettingItemSwitch initWithImage:[UIImage imageNamed:@"more_homeshake"] title:@"摇一摇机选"];
@@ -69,13 +72,17 @@
 }
 - (void)addGroup2
 {
+    
     LLSettingItem *redeemCode = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    
     LLSettingItem *MoreShare = [LLSettingItem initWithImage:[UIImage imageNamed:@"MoreShare"] title:@"分享"];
+    __weak typeof(self) weakSelf = self;
+    __weak typeof(MoreShare) weakMoreShare = MoreShare;
     MoreShare.option = ^{
         
         LLShareViewController *shareVc = [[LLShareViewController alloc]init];
-        shareVc.title = MoreShare.title;
-        [self.navigationController pushViewController:shareVc animated:YES];
+        shareVc.title = weakMoreShare.title;
+        [weakSelf.navigationController pushViewController:shareVc animated:YES];
     };
     LLSettingItem *MoreNetease = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
     LLSettingItem *MoreAbout = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreAbout"] title:@"关于"];
