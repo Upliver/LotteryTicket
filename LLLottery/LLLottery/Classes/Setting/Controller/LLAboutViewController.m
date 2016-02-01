@@ -30,7 +30,7 @@
     LLSettingItem *item1 = [LLSettingItemArrow initWithImage:nil title:@"评分支持"];
     item1.option = ^{
         NSString *appid = @"xxxx";//每一个上架的app都有一个appid
-        NSString *urlStr = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/cn/app/id%@?mt=8",apppid];
+        NSString *urlStr = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/cn/app/id%@?mt=8",appid];
         [[UIApplication sharedApplication]openURL:[NSURL URLWithString:urlStr]];
     };
     LLSettingItem *item2 = [LLSettingItemArrow initWithImage:nil title:@"热线电话"];
