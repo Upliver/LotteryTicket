@@ -42,6 +42,11 @@
 		A8D59F4E1C5FA83800338ED5 /* LLShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F4D1C5FA83800338ED5 /* LLShareViewController.m */; };
 		A8D59F511C5FCA2D00338ED5 /* LLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F501C5FCA2D00338ED5 /* LLAboutViewController.m */; };
 		A8D59F571C5FCE0D00338ED5 /* LLAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8D59F561C5FCE0D00338ED5 /* LLAboutHeaderView.xib */; };
+		A8D59F5B1C5FD1A000338ED5 /* LLProductCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F5A1C5FD1A000338ED5 /* LLProductCollectionViewController.m */; };
+		A8D59F5D1C5FD4CA00338ED5 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = A8D59F5C1C5FD4CA00338ED5 /* products.json */; };
+		A8D59F611C5FD6CF00338ED5 /* LLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F601C5FD6CF00338ED5 /* LLProduct.m */; };
+		A8D59F691C5FDA7300338ED5 /* LLProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F671C5FDA7300338ED5 /* LLProductCell.m */; };
+		A8D59F6A1C5FDA7300338ED5 /* LLProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8D59F681C5FDA7300338ED5 /* LLProductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +112,14 @@
 		A8D59F4F1C5FCA2D00338ED5 /* LLAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAboutViewController.h; sourceTree = "<group>"; };
 		A8D59F501C5FCA2D00338ED5 /* LLAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAboutViewController.m; sourceTree = "<group>"; };
 		A8D59F561C5FCE0D00338ED5 /* LLAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLAboutHeaderView.xib; sourceTree = "<group>"; };
+		A8D59F591C5FD1A000338ED5 /* LLProductCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLProductCollectionViewController.h; sourceTree = "<group>"; };
+		A8D59F5A1C5FD1A000338ED5 /* LLProductCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLProductCollectionViewController.m; sourceTree = "<group>"; };
+		A8D59F5C1C5FD4CA00338ED5 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		A8D59F5F1C5FD6CF00338ED5 /* LLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLProduct.h; sourceTree = "<group>"; };
+		A8D59F601C5FD6CF00338ED5 /* LLProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLProduct.m; sourceTree = "<group>"; };
+		A8D59F661C5FDA7300338ED5 /* LLProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLProductCell.h; sourceTree = "<group>"; };
+		A8D59F671C5FDA7300338ED5 /* LLProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLProductCell.m; sourceTree = "<group>"; };
+		A8D59F681C5FDA7300338ED5 /* LLProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLProductCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +161,7 @@
 		A815771E1C4AA75C00BB66B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A8D59F5C1C5FD4CA00338ED5 /* products.json */,
 				A82CECC91C5B55D300ED8A65 /* Assets.xcassets */,
 				A815772F1C4AA75C00BB66B5 /* Info.plist */,
 				A815772C1C4AA75C00BB66B5 /* LaunchScreen.storyboard */,
@@ -206,6 +220,7 @@
 		A82CECCC1C5B590A00ED8A65 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A8D59F581C5FD17A00338ED5 /* Product */,
 				A8D59F551C5FCDA600338ED5 /* About */,
 				A8D59F541C5FCD9700338ED5 /* Share */,
 				A8D59F531C5FCD8800338ED5 /* Push */,
@@ -219,6 +234,7 @@
 		A82CECCD1C5B590A00ED8A65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8D59F5E1C5FD6B800338ED5 /* Product */,
 				A82CECD51C5B7D3500ED8A65 /* LLSettingItem.h */,
 				A82CECD61C5B7D3500ED8A65 /* LLSettingItem.m */,
 				A85314061C5D112C00E65865 /* LLSettingItemArrow.h */,
@@ -241,6 +257,7 @@
 		A82CECCF1C5B590A00ED8A65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A8D59F621C5FDA1900338ED5 /* Product */,
 				A85314031C5D0D8D00E65865 /* LLTableViewCell.h */,
 				A85314041C5D0D8D00E65865 /* LLTableViewCell.m */,
 			);
@@ -540,6 +557,34 @@
 			name = About;
 			sourceTree = "<group>";
 		};
+		A8D59F581C5FD17A00338ED5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				A8D59F591C5FD1A000338ED5 /* LLProductCollectionViewController.h */,
+				A8D59F5A1C5FD1A000338ED5 /* LLProductCollectionViewController.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		A8D59F5E1C5FD6B800338ED5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				A8D59F5F1C5FD6CF00338ED5 /* LLProduct.h */,
+				A8D59F601C5FD6CF00338ED5 /* LLProduct.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		A8D59F621C5FDA1900338ED5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				A8D59F661C5FDA7300338ED5 /* LLProductCell.h */,
+				A8D59F671C5FDA7300338ED5 /* LLProductCell.m */,
+				A8D59F681C5FDA7300338ED5 /* LLProductCell.xib */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,7 +651,9 @@
 				A8A1EDF61C4ACA2200A2FB2F /* LLMineViewController.storyboard in Resources */,
 				A8A1EDF31C4ACA2200A2FB2F /* LLHistoryTableViewController.storyboard in Resources */,
 				A8A1EDF11C4ACA2200A2FB2F /* LLHallTableViewController.storyboard in Resources */,
+				A8D59F6A1C5FDA7300338ED5 /* LLProductCell.xib in Resources */,
 				A82CECD41C5B649400ED8A65 /* setting.plist in Resources */,
+				A8D59F5D1C5FD4CA00338ED5 /* products.json in Resources */,
 				A82CECCA1C5B55D300ED8A65 /* Assets.xcassets in Resources */,
 				A8A1EDED1C4ACA2200A2FB2F /* LLArenaViewController.storyboard in Resources */,
 			);
@@ -630,15 +677,18 @@
 				A8D59F511C5FCA2D00338ED5 /* LLAboutViewController.m in Sources */,
 				A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */,
 				A853140E1C5D114A00E65865 /* LLSettingItemLabel.m in Sources */,
+				A8D59F691C5FDA7300338ED5 /* LLProductCell.m in Sources */,
 				A82CECD21C5B592600ED8A65 /* LLSettingTableViewController.m in Sources */,
 				A83BBF8B1C59430900C68342 /* LLCollectionViewCell.m in Sources */,
 				A8A1EDF21C4ACA2200A2FB2F /* LLHistoryTableViewController.m in Sources */,
 				A8A1EDEC1C4ACA2200A2FB2F /* LLArenaViewController.m in Sources */,
 				A85314051C5D0D8D00E65865 /* LLTableViewCell.m in Sources */,
+				A8D59F611C5FD6CF00338ED5 /* LLProduct.m in Sources */,
 				A862415F1C4AD2410048B872 /* LLTabBar.m in Sources */,
 				A82B29351C4C166300A1AC4B /* LLNavigationController.m in Sources */,
 				A853140B1C5D114000E65865 /* LLSettingItemSwitch.m in Sources */,
 				A8A1EDF51C4ACA2200A2FB2F /* LLMineViewController.m in Sources */,
+				A8D59F5B1C5FD1A000338ED5 /* LLProductCollectionViewController.m in Sources */,
 				A8A1EDF81C4ACA2200A2FB2F /* main.m in Sources */,
 				A8D59F4E1C5FA83800338ED5 /* LLShareViewController.m in Sources */,
 				A82C80161C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m in Sources */,

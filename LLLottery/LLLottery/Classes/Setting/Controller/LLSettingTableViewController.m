@@ -12,7 +12,7 @@
 #import "LLPushTableViewController.h"
 #import "LLShareViewController.h"
 #import "LLAboutViewController.h"
-
+#import "LLProductCollectionViewController.h"
 
 //typedef enum {
 //    
@@ -86,6 +86,12 @@
         [weakSelf.navigationController pushViewController:shareVc animated:YES];
     };
     LLSettingItem *MoreNetease = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
+    __weak typeof(MoreNetease) weakMoreNetease = MoreNetease;
+    MoreNetease.option = ^{
+        LLProductCollectionViewController *productVc = [[LLProductCollectionViewController alloc]init];
+        productVc.title = weakMoreNetease.title;
+        [weakSelf.navigationController pushViewController:productVc animated:YES];
+    };
     
     LLSettingItem *MoreAbout = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreAbout"] title:@"关于"];
     __weak typeof(MoreAbout) weakMoreAbout = MoreAbout;
