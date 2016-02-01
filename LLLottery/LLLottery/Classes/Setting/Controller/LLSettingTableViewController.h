@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LLSettingTableViewController : UITableViewController
+//@interface LLSettingTableViewController : UITableViewController
+@interface LLSettingTableViewController : LLBaseTableViewController
 
 @end

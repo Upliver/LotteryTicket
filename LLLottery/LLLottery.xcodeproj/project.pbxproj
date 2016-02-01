@@ -37,6 +37,9 @@
 		A8A1EDF61C4ACA2200A2FB2F /* LLMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A1EDE21C4ACA2200A2FB2F /* LLMineViewController.storyboard */; };
 		A8A1EDF71C4ACA2200A2FB2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDE71C4ACA2200A2FB2F /* AppDelegate.m */; };
 		A8A1EDF81C4ACA2200A2FB2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1EDEA1C4ACA2200A2FB2F /* main.m */; };
+		A8D59F481C5FA19900338ED5 /* LLPushTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F471C5FA19900338ED5 /* LLPushTableViewController.m */; };
+		A8D59F4B1C5FA5A400338ED5 /* LLBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F4A1C5FA5A400338ED5 /* LLBaseTableViewController.m */; };
+		A8D59F4E1C5FA83800338ED5 /* LLShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D59F4D1C5FA83800338ED5 /* LLShareViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +96,12 @@
 		A8A1EDE71C4ACA2200A2FB2F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A8A1EDEA1C4ACA2200A2FB2F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8A1EDEB1C4ACA2200A2FB2F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A8D59F461C5FA19900338ED5 /* LLPushTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPushTableViewController.h; sourceTree = "<group>"; };
+		A8D59F471C5FA19900338ED5 /* LLPushTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPushTableViewController.m; sourceTree = "<group>"; };
+		A8D59F491C5FA5A400338ED5 /* LLBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLBaseTableViewController.h; sourceTree = "<group>"; };
+		A8D59F4A1C5FA5A400338ED5 /* LLBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLBaseTableViewController.m; sourceTree = "<group>"; };
+		A8D59F4C1C5FA83800338ED5 /* LLShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShareViewController.h; sourceTree = "<group>"; };
+		A8D59F4D1C5FA83800338ED5 /* LLShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShareViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +203,12 @@
 			children = (
 				A82CECD01C5B592600ED8A65 /* LLSettingTableViewController.h */,
 				A82CECD11C5B592600ED8A65 /* LLSettingTableViewController.m */,
+				A8D59F461C5FA19900338ED5 /* LLPushTableViewController.h */,
+				A8D59F471C5FA19900338ED5 /* LLPushTableViewController.m */,
+				A8D59F4C1C5FA83800338ED5 /* LLShareViewController.h */,
+				A8D59F4D1C5FA83800338ED5 /* LLShareViewController.m */,
+				A8D59F491C5FA5A400338ED5 /* LLBaseTableViewController.h */,
+				A8D59F4A1C5FA5A400338ED5 /* LLBaseTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -570,6 +585,7 @@
 				A8A1EDF41C4ACA2200A2FB2F /* LLTabBarController.m in Sources */,
 				A85314081C5D112C00E65865 /* LLSettingItemArrow.m in Sources */,
 				A82CECD71C5B7D3500ED8A65 /* LLSettingItem.m in Sources */,
+				A8D59F481C5FA19900338ED5 /* LLPushTableViewController.m in Sources */,
 				A86241621C4AD9990048B872 /* LLTabBarButton.m in Sources */,
 				A853140E1C5D114A00E65865 /* LLSettingItemLabel.m in Sources */,
 				A82CECD21C5B592600ED8A65 /* LLSettingTableViewController.m in Sources */,
@@ -582,8 +598,10 @@
 				A853140B1C5D114000E65865 /* LLSettingItemSwitch.m in Sources */,
 				A8A1EDF51C4ACA2200A2FB2F /* LLMineViewController.m in Sources */,
 				A8A1EDF81C4ACA2200A2FB2F /* main.m in Sources */,
+				A8D59F4E1C5FA83800338ED5 /* LLShareViewController.m in Sources */,
 				A82C80161C53D3B8008C2EB9 /* LLNewfeatureCollectionViewController.m in Sources */,
 				A8A1EDF71C4ACA2200A2FB2F /* AppDelegate.m in Sources */,
+				A8D59F4B1C5FA5A400338ED5 /* LLBaseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
