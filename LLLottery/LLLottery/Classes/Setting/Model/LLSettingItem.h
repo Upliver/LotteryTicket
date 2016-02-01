@@ -35,6 +35,11 @@ typedef void(^myOption)();
  */
 @property(nonatomic, copy) NSString *title;
 /**
+ *  cell上子标题(保存电话那一部分文字)
+ */
+@property(nonatomic, copy) NSString *subTitle;
+
+/**
  *  是否有弹窗
  */
 //@property(nonatomic, assign) LLSettingType type;

@@ -11,6 +11,7 @@
 #import "LLTableViewCell.h"
 #import "LLPushTableViewController.h"
 #import "LLShareViewController.h"
+#import "LLAboutViewController.h"
 
 
 //typedef enum {
@@ -85,7 +86,14 @@
         [weakSelf.navigationController pushViewController:shareVc animated:YES];
     };
     LLSettingItem *MoreNetease = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
+    
     LLSettingItem *MoreAbout = [LLSettingItemArrow initWithImage:[UIImage imageNamed:@"MoreAbout"] title:@"关于"];
+    __weak typeof(MoreAbout) weakMoreAbout = MoreAbout;
+    MoreAbout.option = ^{
+        LLAboutViewController *aboutVc = [[LLAboutViewController alloc] init];
+        aboutVc.title = weakMoreAbout.title;
+        [weakSelf.navigationController pushViewController:aboutVc animated:YES];
+    };
     [self.datas addObject:@[redeemCode,MoreShare,MoreNetease,MoreAbout]];
 
 }

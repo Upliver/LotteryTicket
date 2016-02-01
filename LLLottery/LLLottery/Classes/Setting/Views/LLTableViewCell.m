@@ -22,7 +22,7 @@
     static NSString *identifier = @"customCell";
     LLTableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        cell = [[LLTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[LLTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
     
     return cell;
@@ -35,6 +35,7 @@
     // 1.根据传入的数据模型设置需要显示的数据
     self.imageView.image = item.image;
     self.textLabel.text = item.title;
+    self.detailTextLabel.text = item.subTitle;
     // 2.根据cell传入的模型,设置辅助视图
     // 如果是箭头模型,那么辅助视图就是箭头,如果是开关模型,那么辅助视图就是开关.....
     [self setupRightView];
@@ -70,13 +71,13 @@
 }
 
 - (void)awakeFromNib {
-    // Initialization code
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+
 }
 
 #pragma mark - lazy
